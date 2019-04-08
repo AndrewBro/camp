@@ -1,29 +1,12 @@
-# my-project
+# Capm 2019
 
-## Project setup
+#### Project setup
 ```
 yarn install
+yarn serve
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+#### Gitlab
+[https://gitlab.com/AndreyBro/camp][GitLab]
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[GitLab]: https://gitlab.com/AndreyBro/camp
