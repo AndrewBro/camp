@@ -18,7 +18,7 @@
     methods: {
       videoInit () {
         const video = document.getElementById('video');
-        if (!localStorage.isPlayed && !this.hidedVideo) {
+        if (!localStorage.isPlayed) {
           video.play();
           video.addEventListener('ended', (() => this.hidedVideo = true), false);
           localStorage.setItem('isPlayed', '1')
