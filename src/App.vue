@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <Header />
-    <Banner />
-    <About />
-    <Footer />
+    <InitialVideo />
+    <div class="main-conteiner">
+      <Header />
+      <Banner />
+      <About />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -12,10 +15,12 @@ import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import About from './components/About.vue'
 import Footer from './components/Footer.vue'
+import InitialVideo from "./components/InitialVideo";
 
 export default {
   name: 'app',
   components: {
+    InitialVideo,
     Header,
     Banner,
     About,
@@ -25,4 +30,7 @@ export default {
 </script>
 
 <style>
+  #app {
+    position: relative;
+  }
 </style>
