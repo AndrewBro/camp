@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: 'camp/dist'
+  publicPath: 'camp/public'
 };

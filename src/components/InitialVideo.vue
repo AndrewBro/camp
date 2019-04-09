@@ -1,6 +1,7 @@
 <template>
   <div class='initialVideo' :class="{ finished: hidedVideo }">
-    <video autoplay controls id='video' >
+    <!--<video autoplay controls id='video' >-->
+    <video autoplay id='video' >
       <source src='./../assets/media/intro.mp4' type='video/mp4'>
     </video>
   </div>
