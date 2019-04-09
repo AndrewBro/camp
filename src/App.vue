@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <InitialVideo />
-    <div class="main-conteiner">
+    <InitialVideo :v-if="isPlayed" />
+    <div class="main-conteiner" :v-if="!isPlayed">
       <Header />
       <Banner />
       <About />
@@ -25,6 +25,19 @@ export default {
     Banner,
     About,
     Footer
+  },
+  data () {
+    return {
+      isPlayed: false
+    }
+  },
+  methods: {
+    videoInit() {
+      !localStorage.isPlayed ? this.isPlayed = true : this.isPlayed = false
+    }
+  },
+  mounted() {
+    this.videoInit()
   }
 }
 </script>
