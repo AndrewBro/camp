@@ -1,7 +1,7 @@
 <template>
   <div class='initialVideo' :class="{ finished: hidedVideo }">
-    <!--<video autoplay controls id='video' >-->
-    <video autoplay id='video' >
+    <video autoplay controls id='video' >
+    <!--<video autoplay id='video' >-->
       <source src='./../assets/media/intro.mp4' type='video/mp4'>
     </video>
   </div>
@@ -17,14 +17,32 @@
     },
     methods: {
       videoInit () {
-        const video = document.getElementById('video');
-        if (!localStorage.isPlayed) {
-          video.play();
-          video.addEventListener('ended', (() => this.hidedVideo = true), false);
-          localStorage.setItem('isPlayed', '1')
-        } else {
-          video.pause();
-          this.hidedVideo = true;
+        // const video = document.getElementById('video');
+        // if (!localStorage.isPlayed) {
+        //   video.play();
+        //   video.addEventListener('ended', (() => this.hidedVideo = true), false);
+        //   localStorage.setItem('isPlayed', '1')
+        // } else {
+        //   video.pause();
+        //   this.hidedVideo = true;
+        // }
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.then(item => {
+            const video = document.getElementById('video');
+            if (!localStorage.isPlayed) {
+              video.play();
+              video.addEventListener('ended', (() => this.hidedVideo = true), false);
+              localStorage.setItem('isPlayed', '1');
+            } else {
+              video.pause();
+              this.hidedVideo = true;
+            }
+          })
+          .catch(err => {
+            video.pause();
+            this.hidedVideo = true;
+          });
         }
       }
     },
