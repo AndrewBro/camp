@@ -1,8 +1,8 @@
 <template>
-  <div class='initialVideo' :class='{ finished: hidedVideo }'>
-    <video autoplay controls id='video'>
-    <!--<video autoplay id='video' >-->
-      <source src='./../assets/media/intro.mp4' type='video/mp4' />
+  <div class='initialVideo' v-show="!hidedVideo">
+    <!--<video autoplay controls id='video'>-->
+    <video autoplay id='video' preload="metadata">
+      <source src='./../assets/media/intro.mp4' type='video/mp4'/>
     </video>
   </div>
 </template>
@@ -10,49 +10,28 @@
 <script>
   export default {
     name: 'InitialVideo',
-    data () {
+    data() {
       return {
         hidedVideo: false
       }
     },
+    mounted() {
+      this.videoInit();
+    },
     methods: {
-      videoInit () {
+      videoInit() {
         const video = document.getElementById('video');
         localStorage.isPlayed && video.pause();
         if (!localStorage.isPlayed) {
-          video.play();
-          video.addEventListener('ended', (() => this.hidedVideo = true), false);
+          document.getElementById('video').play();
+          video.addEventListener('ended', (() => {
+            this.hidedVideo = true;
+          }), false);
           localStorage.setItem('isPlayed', '1')
         } else {
           this.hidedVideo = true;
         }
-
-        // const video = document.getElementById('video');
-        // const playPromise = video.play();
-        // if (playPromise) {
-        //   playPromise.then(() => {
-        //     const video = document.getElementById('video');
-        //     if (!localStorage.isPlayed) {
-        //       try {
-        //         video.play();
-        //         video.addEventListener('ended', (() => this.hidedVideo = true), false);
-        //         localStorage.setItem('isPlayed', '1');
-        //       } catch (e) {
-        //         this.hidedVideo = true;
-        //       }
-        //     } else {
-        //       // video.pause();
-        //       this.hidedVideo = true;
-        //     }
-        //   })
-        //   .catch(err => {
-        //     console.log(err);
-        //   });
-        // }
       }
-    },
-    mounted() {
-      this.videoInit();
     }
   }
 </script>
@@ -67,9 +46,6 @@
     height: 100vh;
     z-index: 10;
     overflow: hidden;
-    &.finished {
-      display: none;
-    }
   }
   #video {
     object-fit: cover;
@@ -78,11 +54,8 @@
     max-width: 100%;
   }
   video[poster] {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     background: black;
-  }
-  .fade-enter {
-    /*transition: opacity 1s;*/
   }
 </style>

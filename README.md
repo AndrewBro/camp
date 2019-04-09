@@ -13,6 +13,6 @@ yarn serve
 
 
 #### Github page
-[https://andrewbro.github.io/camp/][link]
+[https://andrewbro.github.io/camp/dist/index.html][link]
 
-[link]: https://andrewbro.github.io/camp/
+[link]: https://andrewbro.github.io/camp/dist/index.html
