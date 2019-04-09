@@ -23,7 +23,8 @@
         const video = document.getElementById('video');
         localStorage.isPlayed && video.pause();
         if (!localStorage.isPlayed) {
-          document.getElementById('video').play();
+          // document.getElementById('video').play();
+          video.play();
           video.addEventListener('ended', (() => {
             this.hidedVideo = true;
           }), false);
