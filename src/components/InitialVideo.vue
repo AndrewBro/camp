@@ -31,6 +31,8 @@
               video.msRequestFullscreen();
             }
           }
+        } else {
+          this.hidedVideo = true
         }
       }
     },
@@ -42,7 +44,7 @@
   }
 </script>
 
-<style scoped>
+<style lang='scss'>
   .initialVideo {
     position: absolute;
     top: 0;
@@ -52,18 +54,18 @@
     height: 100vh;
     z-index: 10;
     overflow: hidden;
+    &.finished {
+      display: none;
+    }
   }
   #video {
     height: 100vh;
     object-fit: cover;
     max-width: 100%;
   }
-  video[poster]{
+  video[poster] {
     height:100%;
     width:100%;
     background: black;
-  }
-  .initialVideo.finished {
-    display: none;
   }
 </style>
