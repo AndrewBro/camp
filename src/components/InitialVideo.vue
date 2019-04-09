@@ -17,21 +17,9 @@
     },
     methods: {
       videoInit () {
-        const video = document.getElementById('video');
-        document.getElementById('video').addEventListener('ended', (() => this.hidedVideo = true), false);
         if (!localStorage.isPlayed) {
+          document.getElementById('video').addEventListener('ended', (() => this.hidedVideo = true), false);
           localStorage.setItem('isPlayed', '1');
-          if (!this.hidedVideo) {
-            if (video.requestFullscreen) {
-              video.requestFullscreen();
-            } else if (video.mozRequestFullScreen) {
-              video.mozRequestFullScreen();
-            } else if (video.webkitRequestFullscreen) {
-              video.webkitRequestFullscreen();
-            } else if (video.msRequestFullscreen) {
-              video.msRequestFullscreen();
-            }
-          }
         } else {
           this.hidedVideo = true
         }
