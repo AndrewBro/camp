@@ -17,16 +17,19 @@
     },
     methods: {
       videoInit () {
-        if (!localStorage.isPlayed) {
-          document.getElementById('video').addEventListener('ended', (() => this.hidedVideo = true), false);
-          localStorage.setItem('isPlayed', '1');
+        const video = document.getElementById('video');
+        if (!localStorage.isPlayed && !this.hidedVideo) {
+          video.play();
+          video.addEventListener('ended', (() => this.hidedVideo = true), false);
+          localStorage.setItem('isPlayed', '1')
         } else {
-          this.hidedVideo = true
+          video.pause();
+          this.hidedVideo = true;
         }
       }
     },
     mounted() {
-      this.videoInit()
+      this.videoInit();
     }
   }
 </script>
