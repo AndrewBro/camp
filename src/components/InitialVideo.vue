@@ -36,8 +36,6 @@
         }
       }
     },
-    computed: {
-    },
     mounted() {
       this.videoInit()
     }
