@@ -1,7 +1,7 @@
 <template>
   <div class='initialVideo' v-show="!hidedVideo">
     <!--<video autoplay controls id='video'>-->
-    <video autoplay id='video' preload="metadata">
+    <video autoplay id='video'>
       <source src='./../assets/media/intro.mp4' type='video/mp4'/>
     </video>
   </div>
