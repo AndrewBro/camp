@@ -1,10 +1,15 @@
 <template>
   <div class='initialVideo' v-show="!hidedVideo">
-    <button type="button" class="btn btn-outline-danger" @click="hideVideo">Видел я ваш видосик</button>
-    <video autoplay controls id='video'>
-    <!--<video autoplay id='video'>-->
-      <source src='./../assets/media/intro.mp4' type='video/mp4'/>
-    </video>
+    <div v-if="!loaded">
+      <button type="button" class="btn btn-primary btn-sm" @click="hideVideo">Та видел я ваш видосик</button>
+      <video autoplay controls id='video'>
+      <!--<video autoplay id='video'>-->
+        <source src='./../assets/media/intro.mp4' type='video/mp4'/>
+      </video>
+    </div>
+    <div v-else class="spinner-border text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
   </div>
 </template>
 
@@ -13,7 +18,8 @@
     name: 'InitialVideo',
     data() {
       return {
-        hidedVideo: false
+        hidedVideo: false,
+        loaded: false
       }
     },
     mounted() {
@@ -22,11 +28,16 @@
     methods: {
       videoInit() {
         const video = document.getElementById('video');
-        localStorage.isPlayed && video.pause();
-        video.play();
-        video.addEventListener('ended', (() => {
-          this.hidedVideo = true;
-        }), false);
+        if (video) {
+          video.addEventListener('loadeddata', function() {
+            this.loaded = true;
+            video.play();
+            video.addEventListener('ended', (() => {
+              this.hidedVideo = true;
+            }), false);
+          }, false);
+        }
+        // Запись в lacalstorage
         // if (!localStorage.isPlayed) {
         //   video.play();
         //   video.addEventListener('ended', (() => {
@@ -70,8 +81,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 123123123;
-    /*width: 50px;*/
-    /*height: 50px;*/
+    z-index: 11;
+    border: none;
   }
 </style>

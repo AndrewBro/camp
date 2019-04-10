@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <InitialVideo :v-if="isPlayed" />
-    <div class="main-conteiner" :v-if="!isPlayed">
+    <InitialVideo />
+    <div class="main-conteiner">
       <transition-group name="fade" appear>
         <div :key="key">
           <Header/>
