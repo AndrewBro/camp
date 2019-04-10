@@ -47,7 +47,8 @@
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import "assets/scss/_main.scss";
   #app {
     position: relative;
   }
