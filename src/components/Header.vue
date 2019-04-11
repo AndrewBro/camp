@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header-wrap">
       <a href="tel:+380508455544" class="btn">+38 (050) 845 55 44</a>
-      <a href="#" class="btn button3">Зарегистрироваться</a>
+      <a href="http://forms.gle/4qpwmahFsMSQHYyR6" target="_blank" class="btn button3">Зарегистрироваться</a>
     </div>
   </header>
 </template>
@@ -16,7 +16,7 @@
 <style lang="scss">
   @import "../assets/scss/_main.scss";
   .header {
-    position: fixed;
+    position: absolute;
     content: '';
     top: 0;
     right: 0;

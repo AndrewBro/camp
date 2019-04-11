@@ -1,13 +1,16 @@
 <template>
   <div class='banner'>
+    <video loop="loop" autoplay="autoplay" muted="muted" class="video">
+      <source src="./../assets/media/intro.mp4"/>
+    </video>
     <div class="banner-wrap">
       <div class="banner-title">Jumanji</div>
       <span class="banner-des">Новая История</span>
       <div class="banner-b">
-        <button class="btn btn-primary">Зарегистрироваться</button>
-        <button class="btn btn-outline-primary custom">
+        <a href="#" target="_blank" class="btn btn-primary">Зарегистрироваться</a>
+        <a href="https://www.youtube.com/watch?v=32w4KyDh_LA" target="_blank" class="btn btn-outline-primary custom">
           <img src="./../assets/images/icon-play-24-px.png" alt="">Смотреть видео
-        </button>
+        </a>
       </div>
     </div>
     <div class="bot-nav">
@@ -42,20 +45,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100vh;
-    &:before {
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100vh;
-      background-image: url("../../src/assets/images/banner.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    overflow: hidden;
     &:after {
       position: absolute;
       content: '';
@@ -65,7 +55,7 @@ export default {
       bottom: 0;
       width: 100%;
       height: 100vh;
-      background-color: rgba(0, 0, 0, .6);
+      background-color: rgba(0, 0, 0, .8);
     }
     &-wrap {
       position: absolute;
@@ -78,6 +68,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: initial;
       &:before {
         position: absolute;
         content: '';
@@ -92,7 +83,6 @@ export default {
         transform: rotate(42deg);
         opacity: 0.3;
         z-index: -1;
-        overflow: hidden;
       }
     }
     &-title {
@@ -131,7 +121,7 @@ export default {
       @media (max-width: 768px) {
         flex-direction: column;
       }
-      button {
+      a {
         margin: 0 15px;
         font-size: 1em;
         white-space: nowrap;
@@ -167,7 +157,7 @@ export default {
     z-index: 1;
     color: #fff;
     @media (max-width: 768px) {
-      bottom: 80px;
+      bottom: 30px;
     }
     .mouse {
       position: absolute;
@@ -176,7 +166,7 @@ export default {
       max-height: 32px;
       max-width: 32px;
       @media (max-width: 768px) {
-        bottom: -60px;
+        bottom: 0;
       }
     }
     a {
@@ -202,7 +192,7 @@ export default {
     @media (max-width: 768px) {
       margin: 0 15px;
       a {
-        font-size: .75em;
+        font-size: 0;
       }
     }
     img {
@@ -218,5 +208,13 @@ export default {
         margin: 0 0 10px;
       }
     }
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
   }
 </style>

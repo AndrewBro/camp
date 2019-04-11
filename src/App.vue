@@ -67,6 +67,8 @@
     url("./assets/font/Evolventa-font/Evolventa-Bold.eot") format("eot"),
     url("./assets/font/Evolventa-font/Evolventa-Bold.woff") format("woff"),
     url("./assets/font/Evolventa-font/Evolventa-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
   }
   @font-face {
     font-family: "Evolventa-BoldOblique";
@@ -88,6 +90,8 @@
     url("./assets/font/Evolventa-font/Evolventa-Regular.eot") format("eot"),
     url("./assets/font/Evolventa-font/Evolventa-Regular.woff") format("woff"),
     url("./assets/font/Evolventa-font/Evolventa-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
   }
   #app {
     position: relative;
