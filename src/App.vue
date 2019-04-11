@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <InitialVideo />
-    <div class="main-conteiner">
-      <transition-group name="fade" appear>
-        <div :key="key">
-          <Header/>
-          <Banner/>
-          <About/>
-          <Cost/>
-          <Footer/>
-        </div>
-      </transition-group>
-    </div>
+    <transition-group name="fade" appear>
+      <div :key="key">
+        <Header/>
+        <Banner/>
+        <About/>
+        <Gallery/>
+        <Cost/>
+        <Footer/>
+      </div>
+    </transition-group>
   </div>
 </template>
 
@@ -19,17 +17,17 @@
   import Header from './components/Header.vue'
   import Banner from './components/Banner.vue'
   import About from './components/About.vue'
+  import Gallery from './components/Gallery.vue'
   import Footer from './components/Footer.vue'
-  import InitialVideo from "./components/InitialVideo.vue";
   import Cost from "./components/Cost.vue";
 
   export default {
     name: 'app',
     components: {
-      InitialVideo,
       Header,
       Banner,
       About,
+      Gallery,
       Cost,
       Footer
     },

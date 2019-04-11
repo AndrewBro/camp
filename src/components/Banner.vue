@@ -4,7 +4,7 @@
       <source src="./../assets/media/intro.mp4"/>
     </video>
     <div class="banner-wrap">
-      <div class="banner-title">Jumanji</div>
+      <div class="banner-title" data-aos="flip-up">Jumanji</div>
       <span class="banner-des">Новая История</span>
       <div class="banner-b">
         <a href="#" target="_blank" class="btn btn-primary">Зарегистрироваться</a>
@@ -19,7 +19,7 @@
         <a href="https://www.instagram.com/jumanji_camp/" target="_blank">
           <img src="./../assets/images/logo-insta-24-px.png" alt="">Инстаграм
         </a>
-        <a href="https://t.me/joinchat/CMPmuEZKwWwbo4r_Qx-HLg" target="_blank">
+        <a href="https://t.me/JumajiCamp" target="_blank">
           <img src="./../assets/images/logo-telegram-24-px.png" alt="">Телеграм
         </a>
       </div>
