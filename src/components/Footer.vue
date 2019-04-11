@@ -71,6 +71,7 @@ export default {
     position: relative;
     @media (max-width: 1050px) {
       flex-direction: column;
+      max-width: 100%;
     }
   }
   .left {
@@ -78,7 +79,7 @@ export default {
     flex-direction: column;
     max-width: 400px;
     @media (max-width: 1050px) {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
     h3 {
       font-size: 48px;
@@ -132,6 +133,9 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     max-width: 480px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
     p {
       font-family: 'Evolventa-Regular', sans-serif;
       font-size: 20px;
@@ -153,6 +157,10 @@ export default {
     img {
       max-width: 400px;
       transition:  .5s;
+      @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 </style>
