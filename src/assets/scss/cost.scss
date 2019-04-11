@@ -80,9 +80,12 @@
         .btn {
           padding: 15px 10px;
           background: #008dff;
-          font-family: $font-cost-sub-title;
-          font-size: 16px;
           border: transparent;
+          a {
+            color: #fff;
+            font-family: $font-cost-sub-title;
+            font-size: 16px;
+          }
         }
         .bonus-text {
           padding: 10px 25px 0;

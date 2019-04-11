@@ -49,7 +49,7 @@
                     </ul>
                 </div>
                 <div class="btn-registration text-center">
-                    <button class="btn btn-primary">Зарегистрироваться</button>
+                    <button class="btn btn-primary"><a href="http://forms.gle/4qpwmahFsMSQHYyR6">Зарегистрироваться</a></button>
                     <p class="bonus-text">Приведи друга и получи 10% скидку 🔥</p>
                 </div>
             </div>
