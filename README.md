@@ -6,10 +6,7 @@ yarn
 yarn dev
 ```
 
-#### Gitlab
-[https://gitlab.com/AndreyBro/camp][GitLab]
-
-[GitLab]: https://gitlab.com/AndreyBro/camp
+#### Github
 
 [https://github.com/AndrewBro/camp][Github]
 

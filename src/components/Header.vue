@@ -60,7 +60,7 @@
     right: 0;
     left: 0;
     width: 100%;
-    height: 75px; // TODO:
+    height: 75px;
     z-index: 1;
   }
   .header-wrap {
