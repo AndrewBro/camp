@@ -12,7 +12,11 @@ $dark2: #21232a;
 $dark2: #0f211f;
 $blue: #008dff;
 $blue2: #0074d1;
-
+$font-cost-item: 'Evolventa', sans-serif;
+$color-cost-title: #21232a;
+$font-cost-sub-title: 'Evolventa-Bold', sans-serif;
+$color-cost-sub-title: #268b67;
+$color-cost-amount: #008dff;
 
 body {
   font-size: 16px;
@@ -30,4 +34,8 @@ button.button3 {
   &:hover {
     border: solid 1px $blue2;
   }
+}
+.clear-padding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
