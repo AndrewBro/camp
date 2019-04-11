@@ -1,0 +1,33 @@
+@font-face {
+//  font-family: 'Evolventa';
+//  src:
+//    url('./../font/Evolventa-font/Evolventa-Bold.ttf') format('ttf'),
+//    url('./../font/Evolventa-font/Evolventa-BoldOblique.ttf') format('ttf'),
+//    url('./../font/Evolventa-font/Evolventa-Oblique.ttf') format('ttf'),
+//    url('./../font/Evolventa-font/Evolventa-Regular.ttf') format('ttf')
+}
+
+$dark1: #1a1a1a;
+$dark2: #21232a;
+$dark2: #0f211f;
+$blue: #008dff;
+$blue2: #0074d1;
+
+
+body {
+  font-size: 16px;
+  font-family: 'Evolventa', sans-serif;
+
+}
+
+button.btn {
+  background: $blue2;
+}
+a.button3,
+button.button3 {
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  &:hover {
+    border: solid 1px $blue2;
+  }
+}

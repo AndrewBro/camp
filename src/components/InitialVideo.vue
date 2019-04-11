@@ -1,48 +1,63 @@
 <template>
-  <div class='initialVideo' :class="{ finished: hidedVideo }">
-    <video autoplay controls id='video' >
-      <source src='./../assets/media/intro.mp4' type='video/mp4'>
-    </video>
+  <div class='initialVideo' v-show="!hidedVideo">
+    <div v-if="!loaded">
+      <!--<button type="button" class="btn btn-primary btn-sm" @click="hideVideo">Та видел я ваш видосик</button>-->
+      <!--<video autoplay controls id='video'>-->
+      <!--<video autoplay id='video'>-->
+        <!--<source src='./../assets/media/intro.mp4' type='video/mp4'/>-->
+      <!--</video>-->
+    </div>
+    <div v-else class="spinner-border text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     name: 'InitialVideo',
-    data () {
+    data() {
       return {
-        hidedVideo: false
+        hidedVideo: false,
+        loaded: false
       }
-    },
-    methods: {
-      videoInit () {
-        const video = document.getElementById('video');
-        document.getElementById('video').addEventListener('ended', (() => this.hidedVideo = true), false);
-        if (!localStorage.isPlayed) {
-          localStorage.setItem('isPlayed', '1');
-          if (!this.hidedVideo) {
-            if (video.requestFullscreen) {
-              video.requestFullscreen();
-            } else if (video.mozRequestFullScreen) {
-              video.mozRequestFullScreen();
-            } else if (video.webkitRequestFullscreen) {
-              video.webkitRequestFullscreen();
-            } else if (video.msRequestFullscreen) {
-              video.msRequestFullscreen();
-            }
-          }
-        }
-      }
-    },
-    computed: {
     },
     mounted() {
-      this.videoInit()
+      this.videoInit();
+    },
+    methods: {
+      videoInit() {
+        const video = document.getElementById('video');
+        if (video) {
+          video.addEventListener('loadeddata', function() {
+            this.loaded = true;
+            video.play();
+            video.addEventListener('ended', (() => {
+              this.hidedVideo = true;
+            }), false);
+          }, false);
+        }
+        // Запись в lacalstorage
+        // if (!localStorage.isPlayed) {
+        //   video.play();
+        //   video.addEventListener('ended', (() => {
+        //     this.hidedVideo = true;
+        //   }), false);
+        //   localStorage.setItem('isPlayed', '1')
+        // } else {
+        //   this.hidedVideo = true;
+        // }
+      },
+      hideVideo () {
+        this.hidedVideo = true
+      }
     }
   }
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
+  @import "../assets/scss/_main.scss";
   .initialVideo {
     position: absolute;
     top: 0;
@@ -50,20 +65,25 @@
     bottom: 0;
     left: 0;
     height: 100vh;
-    z-index: 10;
+    /*z-index: 10;*/
     overflow: hidden;
   }
   #video {
-    height: 100vh;
     object-fit: cover;
+    height: 100vh;
+    width: 100%;
     max-width: 100%;
   }
-  video[poster]{
-    height:100%;
-    width:100%;
+  video[poster] {
+    height: 100%;
+    width: 100%;
     background: black;
   }
-  .initialVideo.finished {
-    display: none;
+  button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    border: none;
   }
 </style>
