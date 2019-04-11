@@ -78,6 +78,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: hidden;
       &:before {
         position: absolute;
         content: '';
@@ -92,7 +93,6 @@ export default {
         transform: rotate(42deg);
         opacity: 0.3;
         z-index: -1;
-        overflow: hidden;
       }
     }
     &-title {
@@ -167,7 +167,7 @@ export default {
     z-index: 1;
     color: #fff;
     @media (max-width: 768px) {
-      bottom: 80px;
+      bottom: 30px;
     }
     .mouse {
       position: absolute;
@@ -176,7 +176,7 @@ export default {
       max-height: 32px;
       max-width: 32px;
       @media (max-width: 768px) {
-        bottom: -60px;
+        bottom: 0;
       }
     }
     a {
@@ -202,7 +202,7 @@ export default {
     @media (max-width: 768px) {
       margin: 0 15px;
       a {
-        font-size: .75em;
+        font-size: 0;
       }
     }
     img {

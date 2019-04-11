@@ -16,7 +16,7 @@
 <style lang="scss">
   @import "../assets/scss/_main.scss";
   .header {
-    position: fixed;
+    position: absolute;
     content: '';
     top: 0;
     right: 0;
