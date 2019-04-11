@@ -57,7 +57,6 @@
                 <h3 class="cost__board-item-title text-center">
                     “Обычный пакет”
                 </h3>
-                <p class="sub-title_item text-center">Первые 20 мест</p>
                 <div class="amount text-center">
                     <span>₴3300</span>
                 </div>
