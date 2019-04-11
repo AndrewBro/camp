@@ -2,8 +2,8 @@
 
 #### Project setup
 ```
-yarn install
-yarn serve
+yarn
+yarn dev
 ```
 
 #### Gitlab
