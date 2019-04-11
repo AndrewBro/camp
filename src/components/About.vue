@@ -58,6 +58,43 @@ export default {
     max-width: 670px;
     margin: 0 auto 100px;
     padding: 0 15px;
+    position: relative;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+      @media (max-width: 900px) {
+        bottom: -10vh;
+        opacity: .2;
+      }
+    }
+    &:before {
+      top: 0;
+      right: 0;
+      left: -20vw;
+      bottom: 0;
+      background-image: url("../../src/assets/images/texture4.png");
+      max-width: 200px;
+      @media (max-width: 900px) {
+        bottom: -10vh;
+      }
+    }
+    &:after {
+      top: 15vh;
+      right: 0;
+      left: 20vw;
+      bottom: -15vh;
+      background-image: url("../../src/assets/images/texture5.png");
+      @media (max-width: 900px) {
+        top: 10vh;
+        right: 0;
+        left: 45vw;
+      }
+    }
     @media (max-width: 768px) {
       margin: 0 auto 50px;
     }
@@ -97,7 +134,7 @@ export default {
     }
   }
   .where {
-    max-width: 600px; // ??
+    max-width: 600px;
     position: absolute;
     top: 100px;
     right: 0;
@@ -116,7 +153,26 @@ export default {
      }
   }
   .for {
-    max-width: 700px; // ??
+    max-width: 700px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+      top: 0;
+      right: -25%;
+      bottom: 0;
+      background-image: url("../../src/assets/images/texture6.png");
+      max-width: 200px;
+      @media (max-width: 768px) {
+        right: 50%;
+        bottom: -125%;
+        opacity: 0.2;
+      }
+    }
     p {
       max-width: 600px;
     }
@@ -135,7 +191,7 @@ export default {
     }
   }
   .desc-block {
-    margin: 0 0 100px; // ???
+    margin: 0 0 100px;
     @media (max-width: 768px) {
       max-width: 500px;
     }
@@ -180,9 +236,6 @@ export default {
         background-size: contain;
         background-position: center;
       }
-      /*@media (max-width: 900px) {*/
-        /*margin: 0 auto;*/
-      /*}*/
     }
     img {
       width: 100%;
