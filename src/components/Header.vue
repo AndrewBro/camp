@@ -15,44 +15,6 @@
 
 <style lang="scss">
   @import "../assets/scss/_main.scss";
-  @font-face {
-    font-family: "Sangha";
-    src: url("../assets/font/Sangha-font/Sangha.ttf") format("ttf"),
-    url("../assets/font/Sangha-font/Sangha.eot") format("eot"),
-    url("../assets/font/Sangha-font/Sangha.woff") format("woff"),
-    url("../assets/font/Sangha-font/Sangha.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Evolventa-Bold";
-    src: url("../assets/font/Evolventa-font/Evolventa-Bold.ttf") format("ttf"),
-    url("../assets/font/Evolventa-font/Evolventa-Bold.eot") format("eot"),
-    url("../assets/font/Evolventa-font/Evolventa-Bold.woff") format("woff"),
-    url("../assets/font/Evolventa-font/Evolventa-Bold.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Evolventa-BoldOblique";
-    src: url("../assets/font/Evolventa-font/Evolventa-BoldOblique.ttf") format("ttf"),
-    url("../assets/font/Evolventa-font/Evolventa-BoldOblique.eot") format("eot"),
-    url("../assets/font/Evolventa-font/Evolventa-BoldOblique.woff") format("woff"),
-    url("../assets/font/Evolventa-font/Evolventa-BoldOblique.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Evolventa-Oblique";
-    src: url("../assets/font/Evolventa-font/Evolventa-Oblique.ttf") format("ttf"),
-    url("../assets/font/Evolventa-font/Evolventa-Oblique.eot") format("eot"),
-    url("../assets/font/Evolventa-font/Evolventa-Oblique.woff") format("woff"),
-    url("../assets/font/Evolventa-font/Evolventa-Oblique.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Evolventa-Regular";
-    src: url("../assets/font/Evolventa-font/Evolventa-Regular.ttf") format("ttf"),
-    url("../assets/font/Evolventa-font/Evolventa-Regular.eot") format("eot"),
-    url("../assets/font/Evolventa-font/Evolventa-Regular.woff") format("woff"),
-    url("../assets/font/Evolventa-font/Evolventa-Regular.woff2") format("woff2");
-  }
-
   .header {
     position: fixed;
     content: '';
