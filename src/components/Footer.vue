@@ -50,7 +50,7 @@ export default {
       bottom: 0;
       width: 100%;
       height: 100%;
-      background-image: url('./../assets/images/texture7.png');
+      background-image: url('./../../src/assets/images/texture7.png');
       z-index: 0;
     }
   }
