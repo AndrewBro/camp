@@ -92,6 +92,7 @@ export default {
         transform: rotate(42deg);
         opacity: 0.3;
         z-index: -1;
+        overflow: hidden;
       }
     }
     &-title {
