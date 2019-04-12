@@ -7,7 +7,7 @@
       <div class="banner-title" data-aos="flip-up">Jumanji</div>
       <span class="banner-des">Новая История</span>
       <div class="banner-b">
-        <a href="#" target="_blank" class="btn btn-primary">Зарегистрироваться</a>
+        <a href="http://forms.gle/4qpwmahFsMSQHYyR6" target="_blank" class="btn btn-primary">Зарегистрироваться</a>
         <a href="https://www.youtube.com/watch?v=32w4KyDh_LA" target="_blank" class="btn btn-outline-primary custom">
           <img src="./../assets/images/icon-play-24-px.png" alt="">Смотреть видео
         </a>

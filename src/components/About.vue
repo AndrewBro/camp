@@ -8,7 +8,7 @@
         <div class="when desc-block">
           <div data-aos="zoom-in-right">
             <h3>Когда? <span>🗓️</span></h3>
-            <p>C 21 по 28 Июля</p>
+            <p class="desc-block-price">C 21 по 28 июля</p>
             <div class="img-container">
               <img src="../assets/images/for.jpg" alt="">
             </div>
@@ -227,6 +227,11 @@ export default {
         margin-bottom: 20px;
       }
     }
+
+    &-price {
+      font-size: 30px;
+    }
+
     .img-container {
       position: relative;
       max-width: 390px;
