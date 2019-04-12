@@ -5,6 +5,7 @@
         <Header/>
         <Banner/>
         <About/>
+        <Experience/>
         <Gallery/>
         <Cost/>
         <Footer/>
@@ -20,6 +21,7 @@
   import Gallery from './components/Gallery.vue'
   import Footer from './components/Footer.vue'
   import Cost from "./components/Cost.vue";
+  import Experience from "./components/Experience.vue";
 
   export default {
     name: 'app',
@@ -27,6 +29,7 @@
       Header,
       Banner,
       About,
+      Experience,
       Gallery,
       Cost,
       Footer
