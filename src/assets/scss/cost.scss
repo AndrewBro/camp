@@ -15,6 +15,7 @@
   .cost__board {
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding-bottom: 200px;
     &-item {
@@ -99,6 +100,40 @@
     .active-plan {
       opacity: 1;
       box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .cost {
+    .cost__board {
+      &-item {
+        width: 35%;
+        margin-bottom: 2%;
+        .current-plan {
+          left: 30%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .cost {
+    .cost__board {
+      &-item {
+        width: 55%;
+        margin-bottom: 25%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .cost {
+    .cost__board {
+      &-item {
+        width: 95%;
+        margin-bottom: 30%;
+      }
     }
   }
 }
