@@ -119,6 +119,9 @@
 }
 @media screen and (max-width: 680px) {
   .cost {
+    h1 {
+      font-size: 2.5em !important;
+    }
     .cost__board {
       &-item {
         width: 55%;
