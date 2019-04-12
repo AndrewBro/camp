@@ -41,13 +41,14 @@ export default {
   .footer {
     background-color: #008dff;
     position: relative;
+    overflow: hidden;
     &:before {
       position: absolute;
       content: '';
       top: 0;
-      right: 0;
-      left: 0;
       bottom: 0;
+      right: -50%;
+      left: 75%;
       width: 100%;
       height: 100%;
       background-image: url('./../../src/assets/images/texture7.png');
