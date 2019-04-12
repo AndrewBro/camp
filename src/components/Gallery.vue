@@ -4,7 +4,7 @@
             <div class="gallery-title text-center">
                 <h3>Галерея</h3>
             </div>
-            <div class="gallery-grid">
+            <div class="gallery-grid" data-aos="zoom-in-right">
                 <figure class="gallery__item gallery__item--1">
                     <img src="../assets/images/rectangle-copy-22.png" class="gallery__img" alt="Image 2">
                 </figure>

@@ -1,9 +1,9 @@
 <template>
-    <div class='cost'>
+    <div class="cost">
         <div class="title">
             <h1 class="text-center">Стоимость</h1>
         </div>
-        <div class="cost__board">
+        <div class="cost__board" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="200">
             <div class="cost__board-item">
                 <h3 class="cost__board-item-title text-center">
                     “Ранние пташки”
