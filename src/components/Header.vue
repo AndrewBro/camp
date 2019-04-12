@@ -54,6 +54,10 @@
         color: $blue2;
         text-decoration: none;
       }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
       &.btn {
         font-size: inherit;
       }
