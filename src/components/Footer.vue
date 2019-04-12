@@ -3,14 +3,14 @@
     <div class="footer-wrap">
       <div class="left">
         <h3 data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="100">Контакты</h3>
-        <span data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="200">
+        <span data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="150">
           Фото базы в хорошем качестве
           <a href="https://photos.google.com/share/AF1QipNJR2AAKcrQclYH1FOZTC8BMFAC882DMrvkj7AeBw_gm_14YHriFuTs-LW76ZwveA?key=M1ZZWjZtdlJIX0E1Y3Y5VXctWTNLSlFOREpMMlRn" class="base" target="_blank">
             <i>здесь</i></a>
         </span>
-        <p data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="300">Звоните</p>
-        <a href="tel:+380639734390" class="call" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="400">+380639734390</a>
-        <a href="tel:+380971141187" class="call" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="500">+380971141187</a>
+        <p data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="200">Звоните</p>
+        <a href="tel:+380639734390" class="call" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="350">+380639734390</a>
+        <a href="tel:+380971141187" class="call" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="400">+380971141187</a>
         <div class="social">
           <a href="https://www.instagram.com/jumanji_camp/" target="_blank">Инстаграм</a>
           <a href="https://t.me/JumajiCamp" target="_blank">Телеграм</a>
@@ -19,7 +19,7 @@
       <div class="right">
         <p data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="200">Если у вас остались вопросы, можете задать
           их любым удобным  для вас способом. </p>
-        <div class="map" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500">
+        <div class="map" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="300">
           <a href="https://www.google.com.ua/maps/place/%D0%91%D0%B0%D0%B7%D0%B0+%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0+%22%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%22/@49.2738794,37.5635636,17.12z/data=!4m5!3m4!1s0x4120903c55555555:0x4741bf7c44329931!8m2!3d49.2738713!4d37.5633957?shorturl=1"
             target="_blank">
             <img src="../assets/images/map.png" alt="">
@@ -89,6 +89,9 @@ export default {
     .base {
       margin-bottom: 45px;
       color: inherit;
+    }
+    i {
+      text-decoration: underline;
     }
     p,
     span {
