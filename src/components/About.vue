@@ -10,7 +10,7 @@
             <h3>Когда? <span>🗓️</span></h3>
             <p class="desc-block-price">C 21 по 28 июля</p>
             <div class="img-container">
-              <img src="../assets/images/for.jpg" alt="">
+              <img src="../assets/images/when.jpg" alt="">
             </div>
           </div>
         </div>

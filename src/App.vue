@@ -8,6 +8,7 @@
         <Experience/>
         <Gallery/>
         <Cost/>
+        <Parents/>
         <Footer/>
       </div>
     </transition-group>
@@ -22,6 +23,7 @@
   import Footer from './components/Footer.vue'
   import Cost from "./components/Cost.vue";
   import Experience from "./components/Experience.vue";
+  import Parents from "./components/Parents.vue";
 
   export default {
     name: 'app',
@@ -32,22 +34,14 @@
       Experience,
       Gallery,
       Cost,
+      Parents,
       Footer
     },
     data() {
       return {
-        isPlayed: false,
         key: true
       }
     },
-    methods: {
-      videoInit() {
-        !localStorage.isPlayed ? this.isPlayed = true : this.isPlayed = false
-      }
-    },
-    mounted() {
-      this.videoInit();
-    }
   }
 </script>
 
