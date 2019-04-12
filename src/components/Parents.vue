@@ -4,14 +4,16 @@
     <p class="text">Для ознакомления с правилами лагеря , нашим виденьем и целями скачайте файл и подпишите его*</p>
     <p class="text">После заполнения документа передайте его нам.....</p>
     <a class="file btn btn-outline-primary"
-       href="./../../src/assets/media/Для Родителей.pdf"
-       download="Для родителей.pdf">Скачать файл</a>
+       href="./../../../camp/dist/file.pdf" download="Для родителей.pdf">
+      Скачать файл</a>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Parents'
+    name: 'Parents',
+    methods: {
+    }
   }
 </script>
 
@@ -50,6 +52,7 @@
   }
   .file {
     border-radius: 3px;
+
     &:hover {
       background-color: #008dff;
     }
