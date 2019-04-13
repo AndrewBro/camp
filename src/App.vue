@@ -5,6 +5,7 @@
         <Header/>
         <Banner/>
         <About/>
+        <Experience/>
         <Gallery/>
         <Cost/>
         <Parents/>
@@ -21,6 +22,7 @@
   import Gallery from './components/Gallery.vue'
   import Footer from './components/Footer.vue'
   import Cost from "./components/Cost.vue";
+  import Experience from "./components/Experience.vue";
   import Parents from "./components/Parents.vue";
 
   export default {
@@ -29,6 +31,7 @@
       Header,
       Banner,
       About,
+      Experience,
       Gallery,
       Cost,
       Parents,

@@ -204,10 +204,7 @@ export default {
       max-width: 320px;
     }
     h3 {
-      font-family: 'Evolventa-Bold', sans-serif;
       font-size: 32px;
-      font-weight: bold;
-      font-style: normal;
       font-stretch: normal;
       line-height: normal;
       letter-spacing: 0.5px;
