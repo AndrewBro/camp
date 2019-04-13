@@ -26,23 +26,18 @@ body {
   font-size: 16px;
   font-family: 'Evolventa', sans-serif;
   overflow-x: hidden !important;
-
 }
-
 button.btn {
   background: $blue2;
 }
-
 a.button3,
 button.button3 {
   border-radius: 3px;
   border: solid 1px #ffffff;
-
   &:hover {
     border: solid 1px $blue2;
   }
 }
-
 .clear-padding {
   padding: 0 !important;
   margin: 0 !important;

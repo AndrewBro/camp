@@ -2,6 +2,7 @@
     <div class="experience-section" id="experience">
         <div class="stripes"></div>
         <div class="content">
+            <div data-aos="zoom-in-up">
             <h3>Тебя ждут</h3>
             <div class="experiences">
                 <div class="row items-holder">
@@ -44,7 +45,7 @@
                 </div>
                 <h4 class="text-center">и еще много всего…</h4>
             </div>
-
+            </div>
         </div>
     </div>
 </template>

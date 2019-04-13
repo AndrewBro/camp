@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="bot-nav">
-      <img src="./../assets/images/icon-mouse.png" alt="" class="mouse">
+      <img src="./../assets/images/icon-mouse.png" alt="" class="mouse" >
       <div class="bot-nav-wrap">
         <a href="https://www.instagram.com/jumanji_camp/" target="_blank">
           <img src="./../assets/images/logo-insta-24-px.png" alt="">Инстаграм
