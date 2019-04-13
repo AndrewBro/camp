@@ -1,7 +1,7 @@
 <template>
   <div class='banner'>
     <video loop="loop" autoplay="autoplay" muted="muted" class="video">
-      <source src="./../assets/media/intro.mp4"/>
+      <source src="./../../src/assets/media/intro.mp4"/>
     </video>
     <div class="banner-wrap">
       <div class="banner-title" data-aos="flip-up">Jumanji</div>
