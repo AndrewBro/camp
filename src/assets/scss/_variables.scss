@@ -1,10 +1,10 @@
 @font-face {
-//  font-family: 'Evolventa';
-//  src:
-//    url('./../font/Evolventa-font/Evolventa-Bold.ttf') format('ttf'),
-//    url('./../font/Evolventa-font/Evolventa-BoldOblique.ttf') format('ttf'),
-//    url('./../font/Evolventa-font/Evolventa-Oblique.ttf') format('ttf'),
-//    url('./../font/Evolventa-font/Evolventa-Regular.ttf') format('ttf')
+  //  font-family: 'Evolventa';
+  //  src:
+  //    url('./../font/Evolventa-font/Evolventa-Bold.ttf') format('ttf'),
+  //    url('./../font/Evolventa-font/Evolventa-BoldOblique.ttf') format('ttf'),
+  //    url('./../font/Evolventa-font/Evolventa-Oblique.ttf') format('ttf'),
+  //    url('./../font/Evolventa-font/Evolventa-Regular.ttf') format('ttf')
 }
 
 $dark1: #1a1a1a;
@@ -17,13 +17,16 @@ $color-cost-title: #21232a;
 $font-cost-sub-title: 'Evolventa-Bold', sans-serif;
 $color-cost-sub-title: #268b67;
 $color-cost-amount: #008dff;
+$color-aqua: #20e8cd;
+$color-lavander: #e9e0ff;
+$color-pale: #ffe7ca;
+$row-width: 1080px;
 
 body {
   font-size: 16px;
   font-family: 'Evolventa', sans-serif;
-
+  overflow-x: hidden !important;
 }
-
 button.btn {
   background: $blue2;
 }

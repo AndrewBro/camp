@@ -1,7 +1,7 @@
 <template>
   <div class='banner'>
     <video loop="loop" autoplay="autoplay" muted="muted" class="video">
-      <source src="./../assets/media/intro.mp4"/>
+      <source src="./../../src/assets/media/intro.mp4"/>
     </video>
     <div class="banner-wrap">
       <div class="banner-title" data-aos="flip-up">Jumanji</div>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="bot-nav">
-      <img src="./../assets/images/icon-mouse.png" alt="" class="mouse">
+      <img src="./../assets/images/icon-mouse.png" alt="" class="mouse" >
       <div class="bot-nav-wrap">
         <a href="https://www.instagram.com/jumanji_camp/" target="_blank">
           <img src="./../assets/images/logo-insta-24-px.png" alt="">Инстаграм

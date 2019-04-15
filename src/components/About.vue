@@ -18,7 +18,7 @@
           <div data-aos="zoom-in-left">
             <h3>Где? <span>🤔</span></h3>
             <p>Среди соснового леса на базе отдыха
-              «Нептун» возле Краснооскольского
+              «Нептун» возле Оскольского
               водохранилища.</p>
             <div class="img-container">
               <img src="./../assets/images/where.jpg" alt="">
@@ -204,10 +204,7 @@ export default {
       max-width: 320px;
     }
     h3 {
-      font-family: 'Evolventa-Bold', sans-serif;
       font-size: 32px;
-      font-weight: bold;
-      font-style: normal;
       font-stretch: normal;
       line-height: normal;
       letter-spacing: 0.5px;
