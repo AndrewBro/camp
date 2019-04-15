@@ -26,7 +26,7 @@
                     </div>
                     <div class="column">
                         <div class="item">
-                            <img src="../assets/images/speaking.png" alt="">
+                            <img src="../assets/images/speaking.jpg" alt="">
                             <div class="label">Speaking Club</div>
                         </div>
                     </div>
