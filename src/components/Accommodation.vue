@@ -9,10 +9,11 @@
         На территории круглосуточно будет работать медсестра.
       </p>
       <div class="accom-content">
-        <vueper-slides class="no-shadow" :visible-slides="3"
+        <vueper-slides class="no-shadow"
+                       :visible-slides="3"
                        :arrows="true"
                        :bullets="false"
-                       :autoplay="true"
+                       :autoplay="false"
                        :breakpoints="{ 900: {visibleSlides: 1} }">
           <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"/>
         </vueper-slides>
@@ -32,15 +33,26 @@
       VueperSlide
     },
     data: () => ({
+      // slides: [
+      //   { title: 'Mountain 1', content: 'Slide content 1', image: 'dist/img/base1.766fa4ce.jpg'},
+      //   { title: 'Mountain 2', content: 'Slide content 1', image: 'dist/img/base2.169a8089.jpg'},
+      //   { title: 'Mountain 3', content: 'Slide content 1', image: 'dist/img/base3.6c40a24b.jpg'},
+      //   { title: 'Mountain 4', content: 'Slide content 1', image: 'dist/img/base4.f1b8d109.jpg'},
+      //   { title: 'Mountain 5', content: 'Slide content 1', image: 'dist/img/base5.fdf67d3a.jpg'},
+      //   { title: 'Mountain 6', content: 'Slide content 1', image: 'dist/img/base6.d27d1884.jpg'}
+      // ]
       slides: [
-        { title: 'Mountain 1', content: 'Slide content 1', image: 'dist/img/base1.766fa4ce.jpg'},
-        { title: 'Mountain 2', content: 'Slide content 1', image: 'dist/img/base2.169a8089.jpg'},
-        { title: 'Mountain 3', content: 'Slide content 1', image: 'dist/img/base3.6c40a24b.jpg'},
-        { title: 'Mountain 4', content: 'Slide content 1', image: 'dist/img/base4.f1b8d109.jpg'},
-        { title: 'Mountain 5', content: 'Slide content 1', image: 'dist/img/base5.fdf67d3a.jpg'},
-        { title: 'Mountain 6', content: 'Slide content 1', image: 'dist/img/base6.d27d1884.jpg'}
+        { title: 'Mountain 1', content: 'Slide content 1', image: './../assets/images/base1.jpg'},
+        { title: 'Mountain 2', content: 'Slide content 1', image: './../assets/images/base2.jpg'},
+        { title: 'Mountain 3', content: 'Slide content 1', image: './../assets/images/base3.jpg'},
+        { title: 'Mountain 4', content: 'Slide content 1', image: './../assets/images/base4.jpg'},
+        { title: 'Mountain 5', content: 'Slide content 1', image: './../assets/images/base5.jpg'},
+        { title: 'Mountain 6', content: 'Slide content 1', image: './../assets/images/base6.jpg'}
       ]
-    })
+    }),
+    created() {
+      this.slides[0].image = `./../assets/images/base1.jpg`
+    }
   }
 </script>
 
