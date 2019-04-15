@@ -1,8 +1,8 @@
 <template>
   <header class="header">
     <div class="header-wrap">
-      <a href="tel:+380508455544" class="btn">+38 (050) 845 55 44</a>
-      <a href="http://forms.gle/4qpwmahFsMSQHYyR6" target="_blank" class="btn button3">Зарегистрироваться</a>
+      <a href="tel:+380971141187" class="btn">+38 (097) 114 11 87</a>
+      <a href="http://forms.gle/4qpwmahFsMSQHYyR6" class="btn btn-outline-primary">Зарегистрироваться</a>
     </div>
   </header>
 </template>
@@ -39,13 +39,15 @@
     @media (max-width: 400px) {
       padding: 0 5px;
     }
-    .btn-sm {
-      font-size: inherit;
-    }
-    .button3 {
+    .btn-outline-primary {
       margin: 0 0 0 50px;
+      border-color: #fff;
       @media (max-width: 768px) {
         margin: 0 0 0 5px;
+      }
+      &:hover {
+        color: #fff;
+        text-decoration: none;
       }
     }
     a {

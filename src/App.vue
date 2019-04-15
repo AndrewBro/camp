@@ -9,6 +9,7 @@
         <Gallery/>
         <Cost/>
         <Parents/>
+        <Accommodation/>
         <Footer/>
       </div>
     </transition-group>
@@ -22,6 +23,7 @@
   import Gallery from './components/Gallery.vue'
   import Footer from './components/Footer.vue'
   import Cost from "./components/Cost.vue";
+  import Accommodation from "./components/Accommodation.vue";
   import Experience from "./components/Experience.vue";
   import Parents from "./components/Parents.vue";
 
@@ -35,6 +37,7 @@
       Gallery,
       Cost,
       Parents,
+      Accommodation,
       Footer
     },
     data() {
@@ -64,20 +67,6 @@
     url("./assets/font/Evolventa-font/Evolventa-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
-  }
-  @font-face {
-    font-family: "Evolventa-BoldOblique";
-    src: url("./assets/font/Evolventa-font/Evolventa-BoldOblique.ttf") format("ttf"),
-    url("./assets/font/Evolventa-font/Evolventa-BoldOblique.eot") format("eot"),
-    url("./assets/font/Evolventa-font/Evolventa-BoldOblique.woff") format("woff"),
-    url("./assets/font/Evolventa-font/Evolventa-BoldOblique.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Evolventa-Oblique";
-    src: url("./assets/font/Evolventa-font/Evolventa-Oblique.ttf") format("ttf"),
-    url("./assets/font/Evolventa-font/Evolventa-Oblique.eot") format("eot"),
-    url("./assets/font/Evolventa-font/Evolventa-Oblique.woff") format("woff"),
-    url("./assets/font/Evolventa-font/Evolventa-Oblique.woff2") format("woff2");
   }
   @font-face {
     font-family: "Evolventa-Regular";
