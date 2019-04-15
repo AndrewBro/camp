@@ -13,8 +13,9 @@
                        :visible-slides="3"
                        :arrows="true"
                        :bullets="false"
+                       :slideImageInside="true"
                        :breakpoints="{ 900: {visibleSlides: 1} }">
-          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"/>
+          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"></vueper-slide>
         </vueper-slides>
       </div>
     </div>
@@ -24,6 +25,12 @@
 <script>
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
+  import base1 from './../assets/images/base1.jpg'
+  import base2 from './../assets/images/base2.jpg'
+  import base3 from './../assets/images/base3.jpg'
+  import base4 from './../assets/images/base4.jpg'
+  import base5 from './../assets/images/base5.jpg'
+  import base6 from './../assets/images/base6.jpg'
 
   export default {
     name: 'Accommodation',
@@ -32,26 +39,15 @@
       VueperSlide
     },
     data: () => ({
-      // slides: [
-      //   { title: 'Mountain 1', content: 'Slide content 1', image: 'dist/img/base1.766fa4ce.jpg'},
-      //   { title: 'Mountain 2', content: 'Slide content 1', image: 'dist/img/base2.169a8089.jpg'},
-      //   { title: 'Mountain 3', content: 'Slide content 1', image: 'dist/img/base3.6c40a24b.jpg'},
-      //   { title: 'Mountain 4', content: 'Slide content 1', image: 'dist/img/base4.f1b8d109.jpg'},
-      //   { title: 'Mountain 5', content: 'Slide content 1', image: 'dist/img/base5.fdf67d3a.jpg'},
-      //   { title: 'Mountain 6', content: 'Slide content 1', image: 'dist/img/base6.d27d1884.jpg'}
-      // ]
-      slides: []
-    }),
-    mounted() {
-      this.slides = [
-        { title: 'Mountain 1', content: 'Slide content 1', image: './../assets/images/base1.jpg'},
-        { title: 'Mountain 2', content: 'Slide content 1', image: './../assets/images/base2.jpg'},
-        { title: 'Mountain 3', content: 'Slide content 1', image: './../assets/images/base3.jpg'},
-        { title: 'Mountain 4', content: 'Slide content 1', image: './../assets/images/base4.jpg'},
-        { title: 'Mountain 5', content: 'Slide content 1', image: './../assets/images/base5.jpg'},
-        { title: 'Mountain 6', content: 'Slide content 1', image: './../assets/images/base6.jpg'}
+      slides: [
+        { title: 'Mountain 1', content: 'Slide content 1', image: base1},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base2},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base3},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base4},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base5},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base6}
       ]
-    }
+    })
   }
 </script>
 
@@ -143,6 +139,7 @@
     border-radius: 50%;
     background: #fff;
     box-shadow: 1px 1px 2px 2px #DADAC9;
+    box-shadow: 1px 2px 20px 1px #00000047;
     height: 50px;
     opacity: 1;
     &:focus {
