@@ -7,8 +7,8 @@
       <div class="banner-title" data-aos="flip-up">Jumanji</div>
       <span class="banner-des">Новая История</span>
       <div class="banner-b">
-        <a href="http://forms.gle/4qpwmahFsMSQHYyR6" target="_blank" class="btn btn-primary">Зарегистрироваться</a>
-        <a href="https://www.youtube.com/watch?v=32w4KyDh_LA" target="_blank" class="btn btn-outline-primary custom">
+        <a href="http://forms.gle/4qpwmahFsMSQHYyR6" class="btn btn-primary">Зарегистрироваться</a>
+        <a href="https://www.youtube.com/watch?v=32w4KyDh_LA" class="btn btn-outline-primary custom">
           <img src="./../assets/images/icon-play-24-px.png" alt="">Смотреть видео
         </a>
       </div>
@@ -16,10 +16,10 @@
     <div class="bot-nav">
       <img src="./../assets/images/icon-mouse.png" alt="" class="mouse" >
       <div class="bot-nav-wrap">
-        <a href="https://www.instagram.com/jumanji_camp/" target="_blank">
+        <a href="https://www.instagram.com/jumanji_camp/">
           <img src="./../assets/images/logo-insta-24-px.png" alt="">Инстаграм
         </a>
-        <a href="https://t.me/JumajiCamp" target="_blank">
+        <a href="https://t.me/JumajiCamp">
           <img src="./../assets/images/logo-telegram-24-px.png" alt="">Телеграм
         </a>
       </div>
