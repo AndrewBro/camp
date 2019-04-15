@@ -95,6 +95,8 @@
         }
 
         .content {
+            z-index: 1;
+            position: relative;
             h3 {
                 width: 100%;
                 text-align: center;
