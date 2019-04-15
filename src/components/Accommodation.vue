@@ -13,7 +13,6 @@
                        :visible-slides="3"
                        :arrows="true"
                        :bullets="false"
-                       :autoplay="false"
                        :breakpoints="{ 900: {visibleSlides: 1} }">
           <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"/>
         </vueper-slides>
@@ -150,7 +149,7 @@
       outline: none;
     }
     svg {
-      margin-top: -35px;
+      margin-top: -17px;
     }
   }
 </style>
