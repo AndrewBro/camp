@@ -40,7 +40,10 @@
       //   { title: 'Mountain 5', content: 'Slide content 1', image: 'dist/img/base5.fdf67d3a.jpg'},
       //   { title: 'Mountain 6', content: 'Slide content 1', image: 'dist/img/base6.d27d1884.jpg'}
       // ]
-      slides: [
+      slides: []
+    }),
+    mounted() {
+      this.slides = [
         { title: 'Mountain 1', content: 'Slide content 1', image: './../assets/images/base1.jpg'},
         { title: 'Mountain 2', content: 'Slide content 1', image: './../assets/images/base2.jpg'},
         { title: 'Mountain 3', content: 'Slide content 1', image: './../assets/images/base3.jpg'},
@@ -48,9 +51,6 @@
         { title: 'Mountain 5', content: 'Slide content 1', image: './../assets/images/base5.jpg'},
         { title: 'Mountain 6', content: 'Slide content 1', image: './../assets/images/base6.jpg'}
       ]
-    }),
-    created() {
-      this.slides[0].image = `./../assets/images/base1.jpg`
     }
   }
 </script>
