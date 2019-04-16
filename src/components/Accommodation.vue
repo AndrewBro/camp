@@ -18,7 +18,7 @@
                        :bullets="false"
                        :slideImageInside="true"
                        :breakpoints="{ 900: {visibleSlides: 1} }">
-          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"></vueper-slide>
+          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
         </vueper-slides>
       </div>
     </div>
@@ -34,7 +34,6 @@
   import base4 from './../assets/images/base4.jpg'
   import base5 from './../assets/images/base5.jpg'
   import base6 from './../assets/images/base6.jpg'
-
   export default {
     name: 'Accommodation',
     components: {
@@ -69,7 +68,7 @@
       right: 0;
       background-position: bottom;
       background-repeat: no-repeat;
-      /*background-size: cover;*/
+      background-size: cover;
       @media (max-width: 1000px) {
         display: none;
       }
@@ -195,9 +194,6 @@
     background: #fff;
     box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.2);
     opacity: 1;
-    &:hover {
-      box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.8);
-    }
     &:focus {
       outline: none;
     }
@@ -205,43 +201,48 @@
       display: none;
     }
     &:before {
-      bottom: 0;
-      right: 0;
-      top: 6px;
       content: '';
-      position: absolute;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 26px;
-      height: 26px;
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 6px;
+      border-radius: 2px;position: absolute;
+      top: 50%;
     }
+    &:hover {
+      box-shadow: 0 8px 8px 0 rgba(33, 35, 42, 0.2);
+      &:before {
+        border: solid rgba(0, 0, 0, .6);
+        border-width: 0 3px 3px 0;
+      }
+    }
+  }
+  .vueperslide__image {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
   }
   .vueperslides__arrows--outside {
     .vueperslides__arrow--next {
       right: -25px;
-      &:before {
-        background-image: url("./../assets/images/right.png");
-      }
     }
     .vueperslides__arrow--prev {
       left: -25px;
-      &:before {
-        background-image: url("./../assets/images/left.png");
-      }
     }
   }
-  .vueperslides__arrows {
+  .vueperslides__arrows,
+  .vueperslides__arrows--outside {
     .vueperslides__arrow--next {
       &:before {
-        background-image: url("./../assets/images/right.png");
-        left: 8px;
+        right: 15px;
+        transform: translateY(-50%) rotate(-45deg);
       }
     }
     .vueperslides__arrow--prev {
       &:before {
-        background-image: url("./../assets/images/left.png");
-        left: 5px;
+        left: 15px;
+        transform: translateY(-50%) rotate(135deg);
       }
     }
   }
