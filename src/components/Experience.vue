@@ -1,6 +1,8 @@
 <template>
     <div class="experience-section" id="experience">
-        <div class="stripes"></div>
+        <div data-aos="zoom-in-up">
+            <div class="stripes"></div>
+        </div>
         <div class="content">
             <div data-aos="zoom-in-up">
             <h3>Тебя ждут</h3>

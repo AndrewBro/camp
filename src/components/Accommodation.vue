@@ -1,5 +1,5 @@
 <template>
-  <div class='accom'>
+  <div class='accom' data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="100">
     <img src="./../assets/images/texture8.png" alt="" class="texture-8">
     <img src="./../assets/images/texture9.png" alt="" class="texture-9">
     <img src="./../assets/images/texture10.png" alt="" class="texture-10">
@@ -52,7 +52,6 @@
     })
   }
 </script>
-
 
 <style lang="scss">
   @import "../assets/scss/_main.scss";
@@ -202,7 +201,7 @@
     }
     &:before {
       content: '';
-      border: solid black;
+      border: solid #21232A;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 6px;
@@ -212,7 +211,7 @@
     &:hover {
       box-shadow: 0 8px 8px 0 rgba(33, 35, 42, 0.2);
       &:before {
-        border: solid rgba(0, 0, 0, .6);
+        border: solid #6B7C93;
         border-width: 0 3px 3px 0;
       }
     }
