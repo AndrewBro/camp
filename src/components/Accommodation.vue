@@ -1,5 +1,8 @@
 <template>
   <div class='accom'>
+    <img src="./../assets/images/texture8.png" alt="" class="texture-8">
+    <img src="./../assets/images/texture9.png" alt="" class="texture-9">
+    <img src="./../assets/images/texture10.png" alt="" class="texture-10">
     <div class="accom-wrap">
       <h1 class="title">Проживание</h1>
       <p class="text">
@@ -9,12 +12,13 @@
         На территории круглосуточно будет работать медсестра.
       </p>
       <div class="accom-content">
-        <vueper-slides class="no-shadow" :visible-slides="3"
+        <vueper-slides class="no-shadow"
+                       :visible-slides="3"
                        :arrows="true"
                        :bullets="false"
-                       :autoplay="true"
+                       :slideImageInside="true"
                        :breakpoints="{ 900: {visibleSlides: 1} }">
-          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"/>
+          <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"></vueper-slide>
         </vueper-slides>
       </div>
     </div>
@@ -24,6 +28,12 @@
 <script>
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
+  import base1 from './../assets/images/base1.jpg'
+  import base2 from './../assets/images/base2.jpg'
+  import base3 from './../assets/images/base3.jpg'
+  import base4 from './../assets/images/base4.jpg'
+  import base5 from './../assets/images/base5.jpg'
+  import base6 from './../assets/images/base6.jpg'
 
   export default {
     name: 'Accommodation',
@@ -33,12 +43,12 @@
     },
     data: () => ({
       slides: [
-        { title: 'Mountain 1', content: 'Slide content 1', image: 'dist/img/base1.766fa4ce.jpg'},
-        { title: 'Mountain 2', content: 'Slide content 1', image: 'dist/img/base2.169a8089.jpg'},
-        { title: 'Mountain 3', content: 'Slide content 1', image: 'dist/img/base3.6c40a24b.jpg'},
-        { title: 'Mountain 4', content: 'Slide content 1', image: 'dist/img/base4.f1b8d109.jpg'},
-        { title: 'Mountain 5', content: 'Slide content 1', image: 'dist/img/base5.fdf67d3a.jpg'},
-        { title: 'Mountain 6', content: 'Slide content 1', image: 'dist/img/base6.d27d1884.jpg'}
+        { title: 'Mountain 1', content: 'Slide content 1', image: base1},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base2},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base3},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base4},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base5},
+        { title: 'Mountain 1', content: 'Slide content 1', image: base6}
       ]
     })
   }
@@ -48,8 +58,6 @@
 <style lang="scss">
   @import "../assets/scss/_main.scss";
   .accom {
-    background: #f6f9fc;
-    overflow: hidden;
     position: relative;
     &:before {
       background-image: url("./../assets/images/stripes.svg");
@@ -59,17 +67,70 @@
       bottom: 0;
       top: 0;
       right: 0;
-      background-position: top;
+      background-position: bottom;
       background-repeat: no-repeat;
-      background-size: cover;
+      /*background-size: cover;*/
       @media (max-width: 1000px) {
         display: none;
       }
     }
   }
   .accom-wrap {
+    margin: 60px auto 50px;
+    overflow: hidden;
     position: relative;
-    margin: 30px auto 160px;
+    z-index: 1;
+    @media (max-width: 900px) {
+      margin: 30px auto 50px;
+    }
+    @media (max-width: 500px) {
+      margin: 30px auto 0;
+    }
+  }
+  .texture-8,
+  .texture-9,
+  .texture-10 {
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    @media (max-width: 768px) {
+      opacity: .6;
+    }
+  }
+  .texture-8 {
+    bottom: 0;
+    left: 30%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+  }
+  .texture-9 {
+    bottom: 0;
+    left: 5%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+    @media (max-width: 768px) {
+      top: 150px;
+    }
+  }
+  .texture-10 {
+    bottom: 0;
+    right: 15%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+    @media (max-width: 768px) {
+      top: 50px;
+    }
   }
   .accom-content {
     background: #f6f9fc;
@@ -113,7 +174,6 @@
     height: 100%;
   }
   .vueperslide {
-    margin: 5px;
     background-size: contain;
     background-repeat: no-repeat;
     max-height: 380px;
@@ -128,17 +188,70 @@
     }
   }
   .vueperslides__arrow {
+    height: 40px;
+    width: 40px;
     padding: 2px 8px;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 1px 1px 2px 2px #DADAC9;
-    height: 50px;
+    box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.2);
     opacity: 1;
+    &:hover {
+      box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.8);
+    }
     &:focus {
       outline: none;
     }
     svg {
-      margin-top: -35px;
+      display: none;
+    }
+    &:before {
+      bottom: 0;
+      right: 0;
+      top: 6px;
+      content: '';
+      position: absolute;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .vueperslides__arrows--outside {
+    .vueperslides__arrow--next {
+      right: -25px;
+      &:before {
+        background-image: url("./../assets/images/right.png");
+      }
+    }
+    .vueperslides__arrow--prev {
+      left: -25px;
+      &:before {
+        background-image: url("./../assets/images/left.png");
+      }
+    }
+  }
+  .vueperslides__arrows {
+    .vueperslides__arrow--next {
+      &:before {
+        background-image: url("./../assets/images/right.png");
+        left: 8px;
+      }
+    }
+    .vueperslides__arrow--prev {
+      &:before {
+        background-image: url("./../assets/images/left.png");
+        left: 5px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .vueperslides__parallax-wrapper,
+    .vueperslides__track-inner,
+    .vueperslide {
+      max-height: 600px;
+      height: 600px;
+      padding-bottom: 0 !important;
     }
   }
 </style>
