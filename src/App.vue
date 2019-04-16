@@ -7,9 +7,9 @@
         <About/>
         <Experience/>
         <Gallery/>
+        <Accommodation/>
         <Cost/>
         <Parents/>
-        <Accommodation/>
         <Footer/>
       </div>
     </transition-group>

@@ -1,5 +1,8 @@
 <template>
   <div class='accom'>
+    <img src="./../assets/images/texture8.png" alt="" class="texture-8">
+    <img src="./../assets/images/texture9.png" alt="" class="texture-9">
+    <img src="./../assets/images/texture10.png" alt="" class="texture-10">
     <div class="accom-wrap">
       <h1 class="title">Проживание</h1>
       <p class="text">
@@ -55,8 +58,6 @@
 <style lang="scss">
   @import "../assets/scss/_main.scss";
   .accom {
-    background: #f6f9fc;
-    overflow: hidden;
     position: relative;
     &:before {
       background-image: url("./../assets/images/stripes.svg");
@@ -66,22 +67,69 @@
       bottom: 0;
       top: 0;
       right: 0;
-      background-position: top;
+      background-position: bottom;
       background-repeat: no-repeat;
-      background-size: cover;
+      /*background-size: cover;*/
       @media (max-width: 1000px) {
         display: none;
       }
     }
   }
   .accom-wrap {
+    margin: 60px auto 50px;
+    overflow: hidden;
     position: relative;
-    margin: 30px auto 160px;
+    z-index: 1;
     @media (max-width: 900px) {
       margin: 30px auto 50px;
     }
     @media (max-width: 500px) {
       margin: 30px auto 0;
+    }
+  }
+  .texture-8,
+  .texture-9,
+  .texture-10 {
+    position: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    @media (max-width: 768px) {
+      opacity: .6;
+    }
+  }
+  .texture-8 {
+    bottom: 0;
+    left: 30%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+  }
+  .texture-9 {
+    bottom: 0;
+    left: 5%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+    @media (max-width: 768px) {
+      top: 150px;
+    }
+  }
+  .texture-10 {
+    bottom: 0;
+    right: 15%;
+    top: -50px;
+    width: 100%;
+    max-width: 85px;
+    height: 100%;
+    max-height: 90px;
+    @media (max-width: 768px) {
+      top: 50px;
     }
   }
   .accom-content {
@@ -126,7 +174,7 @@
     height: 100%;
   }
   .vueperslide {
-    /*background-size: contain;*/
+    background-size: contain;
     background-repeat: no-repeat;
     max-height: 380px;
     @media (max-width: 900px) {
