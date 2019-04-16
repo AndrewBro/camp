@@ -19,6 +19,8 @@
     flex-flow: row wrap;
     justify-content: space-around;
     padding-bottom: 200px;
+    max-width: 1300px;
+    margin: 0 auto;
     &-item {
       position: relative;
       width: 20%;
