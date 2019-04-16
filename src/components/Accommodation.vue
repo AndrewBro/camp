@@ -77,6 +77,12 @@
   .accom-wrap {
     position: relative;
     margin: 30px auto 160px;
+    @media (max-width: 900px) {
+      margin: 30px auto 50px;
+    }
+    @media (max-width: 500px) {
+      margin: 30px auto 0;
+    }
   }
   .accom-content {
     background: #f6f9fc;
@@ -120,8 +126,7 @@
     height: 100%;
   }
   .vueperslide {
-    margin: 5px;
-    background-size: contain;
+    /*background-size: contain;*/
     background-repeat: no-repeat;
     max-height: 380px;
     @media (max-width: 900px) {
@@ -135,18 +140,70 @@
     }
   }
   .vueperslides__arrow {
+    height: 40px;
+    width: 40px;
     padding: 2px 8px;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 1px 1px 2px 2px #DADAC9;
-    box-shadow: 1px 2px 20px 1px #00000047;
-    height: 50px;
+    box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.2);
     opacity: 1;
+    &:hover {
+      box-shadow: 0 4px 9px 0 rgba(33, 35, 42, 0.8);
+    }
     &:focus {
       outline: none;
     }
     svg {
-      margin-top: -17px;
+      display: none;
+    }
+    &:before {
+      bottom: 0;
+      right: 0;
+      top: 6px;
+      content: '';
+      position: absolute;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .vueperslides__arrows--outside {
+    .vueperslides__arrow--next {
+      right: -25px;
+      &:before {
+        background-image: url("./../assets/images/right.png");
+      }
+    }
+    .vueperslides__arrow--prev {
+      left: -25px;
+      &:before {
+        background-image: url("./../assets/images/left.png");
+      }
+    }
+  }
+  .vueperslides__arrows {
+    .vueperslides__arrow--next {
+      &:before {
+        background-image: url("./../assets/images/right.png");
+        left: 8px;
+      }
+    }
+    .vueperslides__arrow--prev {
+      &:before {
+        background-image: url("./../assets/images/left.png");
+        left: 5px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .vueperslides__parallax-wrapper,
+    .vueperslides__track-inner,
+    .vueperslide {
+      max-height: 600px;
+      height: 600px;
+      padding-bottom: 0 !important;
     }
   }
 </style>
