@@ -1,5 +1,5 @@
 <template>
-  <div class='accom' data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="100">
+  <div class='accom'>
     <img src="./../assets/images/texture8.png" alt="" class="texture-8">
     <img src="./../assets/images/texture9.png" alt="" class="texture-9">
     <img src="./../assets/images/texture10.png" alt="" class="texture-10">
@@ -137,6 +137,9 @@
     @media (max-width: 1400px) {
       max-width: 800px;
     }
+    @media (max-width: 800px) {
+      max-width: calc(100% - 10px);
+    }
   }
   .title {
     font-family: 'Evolventa-Bold', sans-serif;
@@ -217,17 +220,21 @@
     }
   }
   .vueperslide__image {
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    padding: 5px;
+    max-width: calc(100% - 10px);
+    border-radius: 3px;
+    margin: 0 auto;
   }
   .vueperslides__arrows--outside {
     .vueperslides__arrow--next {
-      right: -25px;
+      right: -19px;
+      width: 44px;
+      height: 44px;
     }
     .vueperslides__arrow--prev {
-      left: -25px;
+      left: -19px;
+      width: 44px;
+      height: 44px;
     }
   }
   .vueperslides__arrows,
