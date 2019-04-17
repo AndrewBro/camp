@@ -155,7 +155,19 @@
                 }
             }
         }
-
+        .gallery-grid:hover .gallery__item{
+            filter:blur(3px);
+            opacity:.5;
+            transform: scale(.98);
+            box-shadow:none;
+        }
+        .gallery-grid:hover .gallery__item:hover{
+            transform:scale(1.2);
+            transition: .3s ease;
+            filter:blur(0);
+            opacity:1;
+            box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
+        }
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
@@ -165,6 +177,13 @@
             margin: 0 auto;
             .gallery__item {
                 cursor: pointer;
+                box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
+            }
+            .box-wrap:hover .box:hover{
+                transform:scale(1);
+                filter:blur(0px);
+                opacity:1;
+                box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
             }
             figure {
                 margin-bottom: 0;
