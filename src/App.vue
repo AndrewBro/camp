@@ -6,10 +6,11 @@
         <Banner/>
         <About/>
         <Experience/>
-        <Gallery/>
+        <!--<Parents/>-->
         <Accommodation/>
+        <AboutCamp/>
+        <Gallery/>
         <Cost/>
-        <Parents/>
         <Footer/>
       </div>
     </transition-group>
@@ -26,6 +27,7 @@
   import Accommodation from "./components/Accommodation.vue";
   import Experience from "./components/Experience.vue";
   import Parents from "./components/Parents.vue";
+  import AboutCamp from "./components/AboutCamp.vue";
 
   export default {
     name: 'app',
@@ -36,6 +38,7 @@
       Experience,
       Gallery,
       Cost,
+      AboutCamp,
       Parents,
       Accommodation,
       Footer
