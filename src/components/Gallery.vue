@@ -237,7 +237,7 @@
             transition: .3s ease;
             filter:blur(0);
             opacity:1;
-            box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
+            box-shadow: none
         }
         .gallery-grid {
             display: grid;
@@ -249,12 +249,6 @@
             .gallery__item {
                 cursor: pointer;
                 box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
-            }
-            .box-wrap:hover .box:hover{
-                transform:scale(1);
-                filter:blur(0px);
-                opacity:1;
-                box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
             }
             figure {
                 margin-bottom: 0;
