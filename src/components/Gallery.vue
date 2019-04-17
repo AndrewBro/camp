@@ -127,6 +127,7 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     width: 100%;
+                    z-index: -1;
                 }
                 &:before {
                     top: -11px;
