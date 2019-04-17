@@ -51,7 +51,7 @@
     .gallery {
         overflow: hidden;
         height: auto;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         padding-top: 25px;
     }
 
