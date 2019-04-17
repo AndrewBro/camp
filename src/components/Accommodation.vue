@@ -217,30 +217,34 @@
     }
   }
   .vueperslide__image {
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    padding: 5px;
+    max-width: calc(100% - 10px);
+    border-radius: 3px;
+    /*box-shadow: 0 11px 34px 4px rgba(33, 35, 42, 0.3);*/
   }
   .vueperslides__arrows--outside {
     .vueperslides__arrow--next {
-      right: -25px;
+      right: -19px;
+      width: 44px;
+      height: 44px;
     }
     .vueperslides__arrow--prev {
-      left: -25px;
+      left: -19px;
+      width: 44px;
+      height: 44px;
     }
   }
   .vueperslides__arrows,
   .vueperslides__arrows--outside {
     .vueperslides__arrow--next {
       &:before {
-        right: 15px;
+        right: 17px;
         transform: translateY(-50%) rotate(-45deg);
       }
     }
     .vueperslides__arrow--prev {
       &:before {
-        left: 15px;
+        left: 17px;
         transform: translateY(-50%) rotate(135deg);
       }
     }
