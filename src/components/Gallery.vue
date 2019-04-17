@@ -331,6 +331,9 @@
                     margin-bottom: 20px;
                 }
             }
+            .gallery-grid:hover .gallery__item:hover{
+                transform: scale(1.1);
+            }
         }
     }
 </style>
