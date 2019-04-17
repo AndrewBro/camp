@@ -51,7 +51,7 @@
     .gallery {
         overflow: hidden;
         height: auto;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         padding-top: 25px;
     }
 
@@ -127,6 +127,7 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     width: 100%;
+                    z-index: -1;
                 }
                 &:before {
                     top: -11px;
@@ -330,6 +331,9 @@
                 .gallery__item {
                     margin-bottom: 20px;
                 }
+            }
+            .gallery-grid:hover .gallery__item:hover{
+                transform: scale(1.1);
             }
         }
     }
