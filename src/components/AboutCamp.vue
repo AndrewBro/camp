@@ -142,6 +142,7 @@ export default {
         margin-bottom: 20px;
         @media (max-width: 768px) {
           font-size: 1.1em;
+          margin-bottom: 10px;
         }
       }
       p {
@@ -162,12 +163,9 @@ export default {
   }
   .about-camp-inner {
     margin-top: -1px;
-    padding: 360px 20px 80px;
+    padding: 120px 20px 80px;
     position: relative;
     z-index: 1;
-    @media (max-width: 800px) {
-      padding: 230px 20px 80px;
-    }
   }
   .stripes2 {
     position: absolute;
@@ -181,11 +179,17 @@ export default {
     background-position: center;
     width: 100%;
     height: 400px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .divider {
     height: 300px;
     background:#212531;
     background: linear-gradient(to right bottom, #fff 54%, #2b2b53 50%);
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .reasons {
     max-width: 690px;
@@ -210,6 +214,9 @@ export default {
       display: flex;
       align-items: center;
       margin-bottom: 40px;
+      @media (max-width: 500px) {
+        margin-bottom: 20px;
+      }
     }
     img {
       width: 25px;

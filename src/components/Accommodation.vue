@@ -79,10 +79,7 @@
     position: relative;
     z-index: 1;
     @media (max-width: 900px) {
-      margin: 30px auto 50px;
-    }
-    @media (max-width: 500px) {
-      margin: 30px auto 0;
+      margin: 30px auto 10px;
     }
   }
   .texture-8,

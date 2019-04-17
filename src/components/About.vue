@@ -2,7 +2,7 @@
   <div class="about">
     <div class="about-wrap">
       <div class="heading">
-        <p>Лето пролетит быстро и незаметно, но ты можешь успеть ухватить неделю ярких впечатлений в загадочном <span>Jumanji CAMP </span></p>
+        <p>Лето пролетит быстро и незаметно, но ты можешь успеть ухватить неделю ярких впечатлений в загадочном <span>Jumanji Camp </span></p>
       </div>
       <div class="desc">
         <div class="when desc-block">
