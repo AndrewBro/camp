@@ -10,45 +10,60 @@
                     <div class="row items-holder">
                         <div class="column">
                             <div class="item">
-                                <img src="../assets/images/zip-line.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="img"></div>
+                                <div class="description">
+                                    Любите ощущение адреналина, а
+                                    экстрим - это неотъемлемая часть вашей жизни ?
+                                    Максимальную безопасность гарантируют наши инструктора.
+                                    Яркие воспоминания о таком экстремальном развлечении останутся у вас надолго
                                 </div>
                                 <div class="label">Зип-лайн</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="item">
-                                <img src="../assets/images/quest.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="img"></div>
+                                <div class="description">
+                                    Квесты, командно-приключенческие игры, популярный вид активного отдыха для
+                                    людей, наполненных энергией и жизненным силами, для тех, кто не желает сидеть на
+                                    месте. Скорость, смекалка, логика, умение находить правильное решение в
+                                    нестандартных ситуациях, командных дух и дух соперничества это атмосфера присущая
+                                    каждому нашему квесту
                                 </div>
                                 <div class="label">Квесты</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="item">
-                                <img src="../assets/images/trainings.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="img"></div>
+                                <div class="description">
+                                    Тренинги по личностному росту. Профессиональный консультант с хорошим опытом работы
+                                    в сфере социальных услуг будет проводить лекции для подростков на темы, которые
+                                    особенно важны для них в этом возрасте. В интерактивной форме подростки будут
+                                    рассуждать на такие темы как "Вызовы", "Разрешение конфликтов", "Взаимоотношения",
+                                    "Самоидентефикация" и другие.
                                 </div>
                                 <div class="label">Тренинги</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="item">
-                                <img src="../assets/images/speaking.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="img"></div>
+                                <div class="description">
+                                    Участники нашего лагеря имеют прекрасную возможность не только весело провести время
+                                    и оздоровиться, но и повысить уровень английского языка в совершенно ненавязчивой
+                                    форме, играя и общаясь с сверстниками носителями языка на протяжении всего дня.
                                 </div>
                                 <div class="label">Speaking Club</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="item">
-                                <img src="../assets/images/games.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="img"></div>
+                                <div class="description">
+                                    Это полностью интелектуальный вид развлечения. Вам понадобиться хорошая память,
+                                    логическое мышление и совсем чучь-чуть везения. Игры будут интересны всем. Больше
+                                    чем 30 разных видов игр.
                                 </div>
                                 <div class="label">Настольные игры</div>
                             </div>
@@ -146,6 +161,36 @@
             position: relative;
             width: 100%;
 
+            &:nth-child(1) {
+                .img {
+                    background-image: url(../assets/images/zip-line.jpg);
+                }
+            }
+
+            &:nth-child(2) {
+                .img {
+                    background-image: url(../assets/images/quest.jpg);
+                }
+            }
+
+            &:nth-child(3) {
+                .img {
+                    background-image: url(../assets/images/trainings.jpg);
+                }
+            }
+
+            &:nth-child(4) {
+                .img {
+                    background-image: url(../assets/images/speaking.jpg);
+                }
+            }
+
+            &:nth-child(5) {
+                .img {
+                    background-image: url(../assets/images/games.jpg);
+                }
+            }
+
             &:nth-child(3n + 2) {
                 .label {
                     background-color: $color-lavander;
@@ -192,9 +237,13 @@
                 }
             }
 
-            img {
+            .img {
                 width: 100%;
-                max-width: 100%;
+                padding-top: 150%;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
                 display: block;
                 margin: auto;
                 border-radius: 3px;
