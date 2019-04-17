@@ -4,7 +4,7 @@
       <source src="./../../src/assets/media/intro.mp4"/>
     </video>
     <div class="banner-wrap">
-      <div class="banner-title" data-aos="flip-up">Jumanji</div>
+      <div class="banner-title">Jumanji</div>
       <span class="banner-des">Новая История</span>
       <div class="banner-b">
         <a href="http://forms.gle/4qpwmahFsMSQHYyR6" class="btn btn-primary">Зарегистрироваться</a>

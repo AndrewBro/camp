@@ -1,6 +1,6 @@
 <template>
   <div class='parents'>
-    <div data-aos="zoom-in-up">
+    <div>
       <h1 class="title">Для родителей 👌</h1>
       <p class="text">
         Мы видим, что в нашем обществе очень много проблем. Многие родители вынуждены много работать, чтобы прокормить
@@ -13,8 +13,10 @@
         одной стороны, они еще дети, с другой - уже взрослые, и перед ними ставятся неподъемные вызовы, как им
         кажется. Многие подростки думают об образовании за границей...
       </p>
-      <a class="file btn btn-outline-primary"
+      <a class="file btn btn-primary"
          href="./../../../camp/dist/file.pdf" target="_blank">Читать полностью</a>
+      <a class="file2 btn btn-outline-primary"
+         href="./../../../camp/dist/file.pdf" target="_blank">Больше о сотрудниках 💪</a>
     </div>
   </div>
 </template>
@@ -48,6 +50,9 @@
       transform: rotate(42deg);
       z-index: -1;
     }
+    a {
+      margin: 0 5px 5px;
+    }
   }
   .title {
     font-family: 'Evolventa-Bold', sans-serif;
@@ -75,10 +80,14 @@
     letter-spacing: 0.5px;
     color: #21232a;
   }
-  .file {
+  .file,
+  .file2 {
     border-radius: 3px;
+  }
+  .file {
+    background-color: #008dff;
     &:hover {
-      background-color: #008dff;
+      background-color: #0074d1;
     }
   }
 </style>

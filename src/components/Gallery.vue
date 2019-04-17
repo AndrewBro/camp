@@ -1,13 +1,13 @@
 <template>
     <div class="gallery">
         <div class="gallery-wrap">
-            <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="100">
+            <div>
                 <div class="gallery-title text-center">
                     <h3>Воспоминания</h3>
                     <div class="leaf"></div>
                 </div>
             </div>
-            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="200">
+            <div>
                 <div class="gallery-grid">
                     <figure class="gallery__item gallery__item--1">
                     <img src="../assets/images/gallery1.jpg" class="gallery__img" alt="Image 1">
@@ -153,6 +153,76 @@
                         left: 45vw;
                     }
                 }
+            }
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(11, 5vw);
+            grid-gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+            .gallery__item {
+                cursor: pointer;
+            }
+            figure {
+                margin-bottom: 0;
+            }
+            .gallery__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2px;
+                box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
+            }
+            .gallery__item--1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            .gallery__item--2 {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            .gallery__item--3 {
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            .gallery__item--4 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 8;
+            }
+            .gallery__item--5 {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 9;
+            }
+            .gallery__item--6 {
+                 grid-column-start: 5;
+                 grid-column-end: 9;
+                 grid-row-start: 4;
+                 grid-row-end: 7;
+            }
+            .gallery__item--7 {
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 7;
+                grid-row-end: 10;
+            }
+            .gallery__item--8 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 8;
+                grid-row-end: 11;
             }
         }
         .gallery-grid:hover .gallery__item{

@@ -1,8 +1,10 @@
 <template>
     <div class="experience-section" id="experience">
-        <div class="stripes"></div>
+        <div>
+            <div class="stripes"></div>
+        </div>
         <div class="content">
-            <div data-aos="zoom-in-up">
+            <div>
                 <h3>Тебя ждут</h3>
                 <div class="experiences">
                     <div class="row items-holder">
