@@ -36,8 +36,12 @@
                         <div class="column">
                             <div class="item">
                                 <div class="img"></div>
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
+                                <div class="description">
+                                    Тренинги по личностному росту. Профессиональный консультант с хорошим опытом работы
+                                    в сфере социальных услуг будет проводить лекции для подростков на темы, которые
+                                    особенно важны для них в этом возрасте. В интерактивной форме подростки будут
+                                    рассуждать на такие темы как "Вызовы", "Разрешение конфликтов", "Взаимоотношения",
+                                    "Самоидентефикация" и другие.
                                 </div>
                                 <div class="label">Тренинги</div>
                             </div>
@@ -158,31 +162,31 @@
             width: 100%;
 
             &:nth-child(1) {
-                .img  {
+                .img {
                     background-image: url(../assets/images/zip-line.jpg);
                 }
             }
 
             &:nth-child(2) {
-                .img  {
+                .img {
                     background-image: url(../assets/images/quest.jpg);
                 }
             }
 
             &:nth-child(3) {
-                .img  {
+                .img {
                     background-image: url(../assets/images/trainings.jpg);
                 }
             }
 
             &:nth-child(4) {
-                .img  {
+                .img {
                     background-image: url(../assets/images/speaking.jpg);
                 }
             }
 
             &:nth-child(5) {
-                .img  {
+                .img {
                     background-image: url(../assets/images/games.jpg);
                 }
             }
