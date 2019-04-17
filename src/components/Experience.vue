@@ -53,15 +53,6 @@
                                 <div class="label">Настольные игры</div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="item">
-                                <img src="../assets/images/aiming.jpg" alt="">
-                                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                                    fugit molestias obcaecati quae quia voluptates.
-                                </div>
-                                <div class="label">Стрельба из лука</div>
-                            </div>
-                        </div>
                     </div>
                     <h4 class="text-center">и еще много всего…</h4>
                 </div>
