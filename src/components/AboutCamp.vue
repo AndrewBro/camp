@@ -1,7 +1,6 @@
 <template>
   <div class="about-camp">
     <div class="about-camp-wrap">
-
       <div class="about-camp-inner">
         <h1 class="title">О лагере</h1>
         <h4 class="desc">5 причин выбрать именно нас</h4>
@@ -47,7 +46,6 @@
             <h5>Отсутствие интернета</h5>
             <p>У нас на территории базы его не будет! :) Подростки отвлекуться от своих смартфонов.</p>
           </div>
-
           <div class="reasons">
             <h4 class="desc">“Портрет сотрудника”</h4>
             <ul>
