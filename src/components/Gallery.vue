@@ -1,13 +1,13 @@
 <template>
     <div class="gallery">
         <div class="gallery-wrap">
-            <div data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="100">
+            <div>
                 <div class="gallery-title text-center">
                     <h3>Воспоминания</h3>
                     <div class="leaf"></div>
                 </div>
             </div>
-            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="200">
+            <div>
                 <div class="gallery-grid">
                     <figure class="gallery__item gallery__item--1">
                     <img src="../assets/images/gallery1.jpg" class="gallery__img" alt="Image 1">

@@ -1,11 +1,11 @@
 <template>
     <div class="cost">
         <div class="title">
-            <div data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="100">
+            <div>
                 <h1 class="text-center">Стоимость</h1>
             </div>
         </div>
-        <div data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="200">
+        <div>
             <div class="cost__board">
                 <div class="cost__board-item">
                     <h3 class="cost__board-item-title text-center">
