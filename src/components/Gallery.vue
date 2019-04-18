@@ -41,10 +41,7 @@
 
 <script>
   export default {
-    name: 'Gallery',
-    components: {
-      VanillaTilt
-    }
+    name: 'Gallery'
   }
 </script>
 
