@@ -161,6 +161,46 @@ export default {
     position: relative;
     background: #2b2b53;
     color: #fff;
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      transform: translate(10vw, 0);
+      background-image: url('./../assets/images/texture8.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 100px;
+      width: 200px;
+      @media (max-width: 900px) {
+        opacity: .5;
+        left: 0;
+      }
+      @media (max-width: 600px) {
+        left: -30%;
+      }
+      @media (max-width: 550px) {
+        left: -40%;
+      }
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      transform: translate(25vw, 0);
+      background-image: url('./../assets/images/flower2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 100px;
+      width: 200px;
+      @media (max-width: 900px) {
+        opacity: .5;
+        left: 30%;
+      }
+    }
   }
   .about-camp-inner {
     margin-top: -1px;
@@ -195,6 +235,7 @@ export default {
   .reasons {
     max-width: 690px;
     margin: 0 auto 30px;
+    position: relative;
     .list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -223,6 +264,23 @@ export default {
       width: 25px;
       height: 25px;
       margin-right: 15px;
+    }
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(50%, -150%);
+      content: '';
+      background-image: url('./../assets/images/letter.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 100px;
+      width: 200px;
+      @media (max-width: 900px) {
+        opacity: .5;
+        transform: translate(-50%, -100%);
+      }
     }
   }
   .register {

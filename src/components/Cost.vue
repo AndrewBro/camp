@@ -30,7 +30,9 @@
           </div>
         </div>
         <div class='cost__board-item active-plan'>
-          <div class='current-plan'><img src='../assets/images/current-plan.png' alt=''></div>
+          <div class='current-plan'>
+            <img src='../assets/images/current-plan.png' alt='' class='active'>
+          </div>
           <h3 class='cost__board-item-title text-center'>
             “Поздние пташки”
           </h3>
@@ -121,7 +123,7 @@
     font-family: $font-cost-item;
     overflow: hidden;
     .title {
-      padding: 80px 0 100px;
+      padding: 80px 0 150px;
       h1 {
         font-size: 62px;
         font-weight: bold;
@@ -153,7 +155,8 @@
         .current-plan {
           position: absolute;
           top: -20%;
-          left: 24%;
+          left: 50%;
+          transform: translate(-50%);
         }
         &-title {
           padding:30px 0 20px;
@@ -224,6 +227,10 @@
       .active-plan {
         opacity: 1;
         box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
+        .active {
+          position: relative;
+          animation: plan-animation 1s infinite;
+        }
       }
     }
   }
@@ -233,9 +240,6 @@
         &-item {
           width: 35%;
           margin-bottom: 2%;
-          .current-plan {
-            left: 30%;
-          }
         }
       }
     }
@@ -255,7 +259,7 @@
           width: 55%;
           margin-bottom: 12%;
           .current-plan {
-            top: -15%;
+            top: -18%;
           }
         }
       }
@@ -270,5 +274,12 @@
         }
       }
     }
+  }
+  @keyframes plan-animation {
+    0%   {top: 0;}
+    25%  {top: 10px;}
+    50%  {top: 5px;}
+    75%  {top: 10px;}
+    100% {top: 0;}
   }
 </style>

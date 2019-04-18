@@ -9,28 +9,28 @@
       </div>
       <div>
         <div class='gallery-grid'>
-          <figure class='gallery__item gallery__item--1'>
+          <figure class='gallery__item gallery__item--1' v-tilt>
             <img src='../assets/images/gallery1.jpg' class='gallery__img' alt='Image 1'>
           </figure>
-          <figure class='gallery__item gallery__item--2'>
+          <figure class='gallery__item gallery__item--2' v-tilt>
             <img src='../assets/images/gallery5.jpg' class='gallery__img' alt='Image 2'>
           </figure>
-          <figure class='gallery__item gallery__item--3'>
+          <figure class='gallery__item gallery__item--3' v-tilt>
             <img src='../assets/images/gallery7.jpg' class='gallery__img' alt='Image 3'>
           </figure>
-          <figure class='gallery__item gallery__item--4'>
+          <figure class='gallery__item gallery__item--4' v-tilt>
             <img src='../assets/images/gallery6.jpg' class='gallery__img' alt='Image 4'>
           </figure>
-          <figure class='gallery__item gallery__item--5'>
+          <figure class='gallery__item gallery__item--5' v-tilt>
             <img src='../assets/images/gallery4.jpg' class='gallery__img' alt='Image 5'>
           </figure>
-          <figure class='gallery__item gallery__item--6'>
+          <figure class='gallery__item gallery__item--6' v-tilt>
             <img src='../assets/images/gallery2.jpg' class='gallery__img' alt='Image 6'>
           </figure>
-          <figure class='gallery__item gallery__item--7'>
+          <figure class='gallery__item gallery__item--7' v-tilt>
             <img src='../assets/images/gallery8.jpg' class='gallery__img' alt='Image 7'>
           </figure>
-          <figure class='gallery__item gallery__item--8'>
+          <figure class='gallery__item gallery__item--8' v-tilt>
             <img src='../assets/images/gallery3.jpg' class='gallery__img' alt='Image 8'>
           </figure>
         </div>
@@ -42,10 +42,13 @@
 <script>
   export default {
     name: 'Gallery',
+    components: {
+      VanillaTilt
+    }
   }
 </script>
 
-<style scoped lang='scss'>
+<style lang='scss'>
   @import '../assets/scss/_main.scss';
   .gallery {
     overflow: hidden;
@@ -91,9 +94,7 @@
         bottom: -15vh;
         background-image: url('../../src/assets/images/group.png');
         @media (max-width: 900px) {
-          top: 10vh;
-          right: 0;
-          left: 45vw;
+          display: none;
         }
       }
       @media (max-width: 768px) {
@@ -218,19 +219,6 @@
         grid-row-end: 11;
       }
     }
-    .gallery-grid:hover .gallery__item {
-      filter: blur(3px);
-      opacity: .5;
-      transform: scale(.98);
-      box-shadow: none;
-    }
-    .gallery-grid:hover .gallery__item:hover {
-      transform: scale(1.2);
-      transition: .3s ease;
-      filter: blur(0);
-      opacity: 1;
-      box-shadow: none
-    }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
@@ -316,22 +304,6 @@
         .gallery__item {
           margin-bottom: 20px;
         }
-      }
-      .gallery-grid:hover .gallery__item:hover {
-        transform: scale(1.1);
-      }
-      .gallery-grid:hover .gallery__item {
-        filter: blur(0);
-        opacity: 1;
-        transform: none;
-        box-shadow: none;
-      }
-      .gallery-grid:hover .gallery__item:hover {
-        transform: none;
-        transition: .3s ease;
-        filter: blur(0);
-        opacity: 1;
-        box-shadow: none
       }
     }
   }
