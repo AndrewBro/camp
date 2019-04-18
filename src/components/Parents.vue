@@ -1,5 +1,5 @@
 <template>
-  <div class='parents' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='1500'>
+  <div class='parents' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
     <div>
       <h1 class='title'>Для родителей 👌</h1>
       <p class='text'>

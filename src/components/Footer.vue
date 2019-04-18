@@ -1,5 +1,5 @@
 <template>
-  <div class='footer' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='1500'>
+  <div class='footer' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
     <div class='footer-wrap'>
       <div class='left'>
         <h3>Контакты</h3>

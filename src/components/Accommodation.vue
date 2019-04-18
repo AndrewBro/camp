@@ -1,5 +1,5 @@
 <template>
-  <div class='accom' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='1500'>
+  <div class='accom' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
     <img src='./../assets/images/texture8.png' alt='' class='texture-8'>
     <img src='./../assets/images/texture9.png' alt='' class='texture-9'>
     <img src='./../assets/images/texture10.png' alt='' class='texture-10'>
@@ -34,6 +34,11 @@
   import base4 from './../assets/images/base4.jpg'
   import base5 from './../assets/images/base5.jpg'
   import base6 from './../assets/images/base6.jpg'
+  import base7 from './../assets/images/base7.jpg'
+  import base8 from './../assets/images/base8.jpg'
+  import base9 from './../assets/images/base9.jpg'
+  import base10 from './../assets/images/base10.jpg'
+
   export default {
     name: 'Accommodation',
     components: {
@@ -42,12 +47,16 @@
     },
     data: () => ({
       slides: [
-        { title: 'Mountain 1', content: 'Slide content 1', image: base1},
-        { title: 'Mountain 1', content: 'Slide content 1', image: base2},
-        { title: 'Mountain 1', content: 'Slide content 1', image: base3},
-        { title: 'Mountain 1', content: 'Slide content 1', image: base4},
-        { title: 'Mountain 1', content: 'Slide content 1', image: base5},
-        { title: 'Mountain 1', content: 'Slide content 1', image: base6}
+        { image: base1},
+        { image: base2},
+        { image: base3},
+        { image: base4},
+        { image: base5},
+        { image: base6},
+        { image: base7},
+        { image: base8},
+        { image: base9},
+        { image: base10}
       ]
     })
   }

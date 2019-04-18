@@ -1,5 +1,5 @@
 <template>
-  <div class='gallery' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='1500'>
+  <div class='gallery' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
     <div class='gallery-wrap'>
       <div>
         <div class='gallery-title text-center'>

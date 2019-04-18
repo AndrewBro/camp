@@ -1,5 +1,5 @@
 <template>
-  <div class='cost' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='1500'>
+  <div class='cost' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
     <div class='title'>
       <div>
         <h1 class='text-center'>Стоимость</h1>
