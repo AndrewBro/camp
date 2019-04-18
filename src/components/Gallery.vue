@@ -9,28 +9,28 @@
       </div>
       <div>
         <div class='gallery-grid'>
-          <figure class='gallery__item gallery__item--1' v-tilt>
+          <figure class='gallery__item gallery__item--1'>
             <img src='../assets/images/gallery1.jpg' class='gallery__img' alt='Image 1'>
           </figure>
-          <figure class='gallery__item gallery__item--2' v-tilt>
+          <figure class='gallery__item gallery__item--2'>
             <img src='../assets/images/gallery5.jpg' class='gallery__img' alt='Image 2'>
           </figure>
-          <figure class='gallery__item gallery__item--3' v-tilt>
+          <figure class='gallery__item gallery__item--3'>
             <img src='../assets/images/gallery7.jpg' class='gallery__img' alt='Image 3'>
           </figure>
-          <figure class='gallery__item gallery__item--4' v-tilt>
+          <figure class='gallery__item gallery__item--4'>
             <img src='../assets/images/gallery6.jpg' class='gallery__img' alt='Image 4'>
           </figure>
-          <figure class='gallery__item gallery__item--5' v-tilt>
+          <figure class='gallery__item gallery__item--5'>
             <img src='../assets/images/gallery4.jpg' class='gallery__img' alt='Image 5'>
           </figure>
-          <figure class='gallery__item gallery__item--6' v-tilt>
+          <figure class='gallery__item gallery__item--6'>
             <img src='../assets/images/gallery2.jpg' class='gallery__img' alt='Image 6'>
           </figure>
-          <figure class='gallery__item gallery__item--7' v-tilt>
+          <figure class='gallery__item gallery__item--7'>
             <img src='../assets/images/gallery8.jpg' class='gallery__img' alt='Image 7'>
           </figure>
-          <figure class='gallery__item gallery__item--8' v-tilt>
+          <figure class='gallery__item gallery__item--8'>
             <img src='../assets/images/gallery3.jpg' class='gallery__img' alt='Image 8'>
           </figure>
         </div>
@@ -165,7 +165,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 2px;
-        box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
       }
       .gallery__item--1 {
         grid-column-start: 1;
@@ -223,10 +222,6 @@
       grid-gap: 15px;
       max-width: 1200px;
       margin: 0 auto;
-      .gallery__item {
-        cursor: pointer;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
-      }
       figure {
         margin-bottom: 0;
       }
@@ -235,7 +230,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 2px;
-        box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
       }
       .gallery__item--1 {
         grid-column-start: 1;

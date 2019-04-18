@@ -9,7 +9,7 @@
         <div class='experiences'>
           <div class='row items-holder'>
             <div class='column'>
-              <div class='item'>
+              <div class='item' v-tilt>
                 <div class='img'></div>
                 <div class='description'>
                   Любите ощущение адреналина, а
@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class='column'>
-              <div class='item'>
+              <div class='item' v-tilt>
                 <div class='img'></div>
                 <div class='description'>
                   Квесты, командно-приключенческие игры, популярный вид активного отдыха для
@@ -34,7 +34,7 @@
               </div>
             </div>
             <div class='column'>
-              <div class='item'>
+              <div class='item' v-tilt>
                 <div class='img'></div>
                 <div class='description'>
                   Тренинги по личностному росту. Профессиональный консультант с хорошим опытом работы
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class='column'>
-              <div class='item'>
+              <div class='item' v-tilt>
                 <div class='img'></div>
                 <div class='description'>
                   Участники нашего лагеря имеют прекрасную возможность не только весело провести время
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class='column'>
-              <div class='item'>
+              <div class='item' v-tilt>
                 <div class='img'></div>
                 <div class='description'>
                   Это полностью интелектуальный вид развлечения. Вам понадобиться хорошая память,
@@ -208,12 +208,9 @@
       font-size: 15px;
       transform: rotate(0deg);
       &:hover {
-        box-shadow: 0 0 8px 0 #c5c5c5;
-        transform: rotate(3deg);
         .description {
           display: block;
           animation: puffIn 0.2s ease-in-out 0s;
-          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.36);
         }
       }
       .img {
