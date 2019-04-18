@@ -1,26 +1,26 @@
 <template>
   <div class='banner'>
-    <video loop="loop" autoplay="autoplay" muted="muted" class="video">
-      <source src="./../../src/assets/media/intro.mp4"/>
+    <video loop='loop' autoplay='autoplay' muted='muted' class='video'>
+      <source src='./../../src/assets/media/intro.mp4'/>
     </video>
-    <div class="banner-wrap">
-      <div class="banner-title">Jumanji</div>
-      <span class="banner-des">Новая История</span>
-      <div class="banner-b">
-        <a href="http://forms.gle/4qpwmahFsMSQHYyR6" class="btn btn-primary">Зарегистрироваться</a>
-        <a href="https://www.youtube.com/watch?v=32w4KyDh_LA" class="btn btn-outline-primary custom">
-          <img src="./../assets/images/icon-play-24-px.png" alt="">Смотреть видео
+    <div class='banner-wrap'>
+      <div class='banner-title'>Jumanji</div>
+      <span class='banner-des'>Новая История</span>
+      <div class='banner-b'>
+        <a href='http://forms.gle/4qpwmahFsMSQHYyR6' class='btn btn-primary'>Зарегистрироваться</a>
+        <a href='https://www.youtube.com/watch?v=32w4KyDh_LA' class='btn btn-outline-primary custom'>
+          <img src='./../assets/images/icon-play-24-px.png' alt=''>Смотреть видео
         </a>
       </div>
     </div>
-    <div class="bot-nav">
-      <img src="./../assets/images/icon-mouse.png" alt="" class="mouse" >
-      <div class="bot-nav-wrap">
-        <a href="https://www.instagram.com/jumanji_camp/">
-          <img src="./../assets/images/logo-insta-24-px.png" alt="">Инстаграм
+    <div class='bot-nav'>
+      <img src='./../assets/images/icon-mouse.png' alt='' class='mouse' >
+      <div class='bot-nav-wrap'>
+        <a href='https://www.instagram.com/jumanji_camp/'>
+          <img src='./../assets/images/logo-insta-24-px.png' alt=''>Инстаграм
         </a>
-        <a href="https://t.me/JumajiCamp">
-          <img src="./../assets/images/logo-telegram-24-px.png" alt="">Телеграм
+        <a href='https://t.me/JumajiCamp'>
+          <img src='./../assets/images/logo-telegram-24-px.png' alt=''>Телеграм
         </a>
       </div>
     </div>
@@ -39,8 +39,8 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
-  @import "../assets/scss/_main.scss";
+<style lang='scss'>
+  @import '../assets/scss/_main.scss';
   .banner {
     position: relative;
     width: 100%;
@@ -76,7 +76,7 @@ export default {
         right: 0;
         left: 0;
         bottom: 0;
-        background-image: url("../../src/assets/images/texture.png");
+        background-image: url('../../src/assets/images/texture.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -148,6 +148,16 @@ export default {
         }
       }
     }
+    .video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
   .bot-nav {
     position: absolute;
@@ -208,15 +218,5 @@ export default {
         margin: 0 0 10px;
       }
     }
-  }
-  .video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 </style>

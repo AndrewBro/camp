@@ -1,37 +1,37 @@
 <template>
-  <div class="gallery">
-    <div class="gallery-wrap">
+  <div class='gallery' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+    <div class='gallery-wrap'>
       <div>
-        <div class="gallery-title text-center">
+        <div class='gallery-title text-center'>
           <h3>Воспоминания</h3>
-          <div class="leaf"></div>
+          <div class='leaf'></div>
         </div>
       </div>
       <div>
-        <div class="gallery-grid">
-          <figure class="gallery__item gallery__item--1">
-            <img src="../assets/images/gallery1.jpg" class="gallery__img" alt="Image 1">
+        <div class='gallery-grid'>
+          <figure class='gallery__item gallery__item--1'>
+            <img src='../assets/images/gallery1.jpg' class='gallery__img' alt='Image 1'>
           </figure>
-          <figure class="gallery__item gallery__item--2">
-            <img src="../assets/images/gallery5.jpg" class="gallery__img" alt="Image 2">
+          <figure class='gallery__item gallery__item--2'>
+            <img src='../assets/images/gallery5.jpg' class='gallery__img' alt='Image 2'>
           </figure>
-          <figure class="gallery__item gallery__item--3">
-            <img src="../assets/images/gallery7.jpg" class="gallery__img" alt="Image 3">
+          <figure class='gallery__item gallery__item--3'>
+            <img src='../assets/images/gallery7.jpg' class='gallery__img' alt='Image 3'>
           </figure>
-          <figure class="gallery__item gallery__item--4">
-            <img src="../assets/images/gallery6.jpg" class="gallery__img" alt="Image 4">
+          <figure class='gallery__item gallery__item--4'>
+            <img src='../assets/images/gallery6.jpg' class='gallery__img' alt='Image 4'>
           </figure>
-          <figure class="gallery__item gallery__item--5">
-            <img src="../assets/images/gallery4.jpg" class="gallery__img" alt="Image 5">
+          <figure class='gallery__item gallery__item--5'>
+            <img src='../assets/images/gallery4.jpg' class='gallery__img' alt='Image 5'>
           </figure>
-          <figure class="gallery__item gallery__item--6">
-            <img src="../assets/images/gallery2.jpg" class="gallery__img" alt="Image 6">
+          <figure class='gallery__item gallery__item--6'>
+            <img src='../assets/images/gallery2.jpg' class='gallery__img' alt='Image 6'>
           </figure>
-          <figure class="gallery__item gallery__item--7">
-            <img src="../assets/images/gallery8.jpg" class="gallery__img" alt="Image 7">
+          <figure class='gallery__item gallery__item--7'>
+            <img src='../assets/images/gallery8.jpg' class='gallery__img' alt='Image 7'>
           </figure>
-          <figure class="gallery__item gallery__item--8">
-            <img src="../assets/images/gallery3.jpg" class="gallery__img" alt="Image 8">
+          <figure class='gallery__item gallery__item--8'>
+            <img src='../assets/images/gallery3.jpg' class='gallery__img' alt='Image 8'>
           </figure>
         </div>
       </div>
@@ -41,27 +41,24 @@
 
 <script>
   export default {
-    name: 'Gallery',
+    name: 'Gallery'
   }
 </script>
 
-<style scoped lang="scss">
-  @import "../assets/scss/_main.scss";
-
+<style lang='scss'>
+  @import '../assets/scss/_main.scss';
   .gallery {
     overflow: hidden;
     height: auto;
     padding-bottom: 5%;
     padding-top: 25px;
   }
-
   .gallery-wrap {
     .gallery-title {
       max-width: 670px;
       margin: 150px auto 100px;
       padding: 0 15px;
       position: relative;
-
       &:before,
       &:after {
         position: absolute;
@@ -74,38 +71,32 @@
           opacity: .2;
         }
       }
-
       &:before {
         top: -1vh;
         right: 0;
         left: -20vw;
         height: 100px;
         bottom: 0;
-        background-image: url("../../src/assets/images/image.png");
+        background-image: url('../../src/assets/images/image.png');
         max-width: 200px;
         @media (max-width: 900px) {
           bottom: -10vh;
         }
       }
-
       &:after {
         top: -14vh;
         right: 0;
         left: 35vw;
         height: 150px;
         bottom: -15vh;
-        background-image: url("../../src/assets/images/group.png");
+        background-image: url('../../src/assets/images/group.png');
         @media (max-width: 900px) {
-          top: 10vh;
-          right: 0;
-          left: 45vw;
+          display: none;
         }
       }
-
       @media (max-width: 768px) {
         margin: 0 auto 50px;
       }
-
       h3 {
         font-family: 'Evolventa-Bold', sans-serif;
         font-size: 62px;
@@ -135,7 +126,7 @@
           left: 8vw;
           height: 99px;
           bottom: 0;
-          background-image: url("../../src/assets/images/flower-copy-10.png");
+          background-image: url('../../src/assets/images/flower-copy-10.png');
           max-width: 200px;
           @media (max-width: 900px) {
             bottom: -10vh;
@@ -147,7 +138,7 @@
           left: 25vw;
           height: 143px;
           bottom: -15vh;
-          background-image: url("../../src/assets/images/flower-copy-8.png");
+          background-image: url('../../src/assets/images/flower-copy-8.png');
           @media (max-width: 900px) {
             top: 10vh;
             right: 0;
@@ -156,7 +147,6 @@
         }
       }
     }
-
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
@@ -175,7 +165,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 2px;
-        box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
       }
       .gallery__item--1 {
         grid-column-start: 1;
@@ -226,19 +215,6 @@
         grid-row-end: 11;
       }
     }
-    .gallery-grid:hover .gallery__item {
-      filter: blur(3px);
-      opacity: .5;
-      transform: scale(.98);
-      box-shadow: none;
-    }
-    .gallery-grid:hover .gallery__item:hover {
-      transform: scale(1.2);
-      transition: .3s ease;
-      filter: blur(0);
-      opacity: 1;
-      box-shadow: none
-    }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
@@ -246,10 +222,6 @@
       grid-gap: 15px;
       max-width: 1200px;
       margin: 0 auto;
-      .gallery__item {
-        cursor: pointer;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25)
-      }
       figure {
         margin-bottom: 0;
       }
@@ -258,7 +230,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 2px;
-        box-shadow: 0 5px 16px -1px rgba(33, 35, 42, 0.04);
       }
       .gallery__item--1 {
         grid-column-start: 1;
@@ -310,7 +281,6 @@
       }
     }
   }
-
   @media screen and (max-width: 961px) {
     .gallery {
       .gallery-title {
@@ -325,22 +295,6 @@
         .gallery__item {
           margin-bottom: 20px;
         }
-      }
-      .gallery-grid:hover .gallery__item:hover {
-        transform: scale(1.1);
-      }
-      .gallery-grid:hover .gallery__item {
-        filter: blur(0);
-        opacity: 1;
-        transform: none;
-        box-shadow: none;
-      }
-      .gallery-grid:hover .gallery__item:hover {
-        transform: none;
-        transition: .3s ease;
-        filter: blur(0);
-        opacity: 1;
-        box-shadow: none
       }
     }
   }
