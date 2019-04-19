@@ -11,6 +11,8 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(VueTilt);
 
+console.log(process.env.NODE_ENV);
+
 new Vue({
   el: '#app',
   created () {

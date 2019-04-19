@@ -1,5 +1,5 @@
 <template>
-  <div class='experience-section' id='experience' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='experience-section' id='experience' data-aos='fade-up'>
     <div>
       <div class='stripes'></div>
     </div>

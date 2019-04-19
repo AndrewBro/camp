@@ -1,5 +1,5 @@
 <template>
-  <div class='parents' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='parents' data-aos='fade-up'>
     <div>
       <h1 class='title'>Для родителей 👌</h1>
       <p class='text'>
@@ -13,7 +13,7 @@
         одной стороны, они еще дети, с другой - уже взрослые, и перед ними ставятся неподъемные вызовы, как им
         кажется. Многие подростки думают об образовании за границей...
       </p>
-      <a class='file btn btn-primary' href='./../../../camp/dist/file.pdf' target='_blank'>Читать полностью</a>
+      <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'>Читать полностью</a>
       <a class='file2 btn btn-outline-primary' href='./../../../camp/dist/file.pdf' target='_blank'>Больше о сотрудниках 💪</a>
     </div>
   </div>
@@ -26,7 +26,7 @@
 </script>
 
 
-<style lang='scss' scoped>
+<style lang='scss'>
   @import '../assets/scss/_main.scss';
   .parents {
     padding: 3em 15px 7em;
@@ -49,7 +49,7 @@
       z-index: -1;
     }
     a {
-      margin: 0 5px 5px;
+      margin: 0 5px 10px;
     }
     .title {
       font-family: 'Evolventa-Bold', sans-serif;
