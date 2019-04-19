@@ -1,5 +1,5 @@
 <template>
-  <div class='accom' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='accom' data-aos='fade-up'>
     <img src='./../assets/images/texture8.png' alt='' class='texture-8'>
     <img src='./../assets/images/texture9.png' alt='' class='texture-9'>
     <img src='./../assets/images/texture10.png' alt='' class='texture-10'>
@@ -16,6 +16,7 @@
                        :visible-slides='3'
                        :arrows='true'
                        :bullets='false'
+                       :touchable="false"
                        :slideImageInside='true'
                        :breakpoints='{ 900: {visibleSlides: 1} }'>
           <vueper-slide v-for='(slide, i) in slides' :key='i' :image='slide.image' />
@@ -38,6 +39,7 @@
   import base8 from './../assets/images/base8.jpg'
   import base9 from './../assets/images/base9.jpg'
   import base10 from './../assets/images/base10.jpg'
+  import base11 from './../assets/images/base11.jpg'
 
   export default {
     name: 'Accommodation',
@@ -47,16 +49,17 @@
     },
     data: () => ({
       slides: [
+        { image: base4},
         { image: base1},
+        { image: base5},
         { image: base2},
         { image: base3},
-        { image: base4},
-        { image: base5},
         { image: base6},
         { image: base7},
         { image: base8},
         { image: base9},
-        { image: base10}
+        { image: base10},
+        { image: base11}
       ]
     })
   }

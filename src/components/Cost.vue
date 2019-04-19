@@ -1,5 +1,5 @@
 <template>
-  <div class='cost' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='cost' data-aos='fade-up'>
     <div class='title'>
       <div>
         <h1 class='text-center'>Стоимость</h1>
@@ -54,8 +54,9 @@
             </ul>
           </div>
           <div class='btn-registration text-center'>
-            <button class='btn btn-primary'><a
-              href='http://forms.gle/4qpwmahFsMSQHYyR6'>Зарегистрироваться</a></button>
+            <button class='btn btn-primary'>
+              <a href='http://forms.gle/4qpwmahFsMSQHYyR6'>Зарегистрироваться</a>
+            </button>
             <p class='bonus-text'>Приведи друга и получи 10% скидку 🔥</p>
           </div>
         </div>
@@ -206,13 +207,18 @@
         .btn-registration {
           margin: 20px 0;
           .btn {
-            padding: 15px 10px;
+            padding: 15px 20px;
             background: #008dff;
             border: transparent;
+            &:hover {
+              background: #0074d1;
+              a {
+                text-decoration: none;
+              }
+            }
             a {
               color: #fff;
               font-family: $font-cost-sub-title;
-              font-size: 16px;
             }
           }
           .bonus-text {

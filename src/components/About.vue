@@ -1,5 +1,5 @@
 <template>
-  <div class='about' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='about' data-aos='fade-up'>
     <div class='about-wrap'>
       <div class='heading'>
         <p>Лето пролетит быстро и незаметно, но ты можешь успеть ухватить неделю ярких впечатлений в загадочном <span>Jumanji Camp </span></p>
@@ -34,7 +34,7 @@
               приготовил для тебя (да, именно для тебя! ☺ ) самое разнообразное
               времяпровождение. Читай и убедись сам!</p>
             <div class='img-container'>
-              <img src='./../assets/images/for.jpg' alt=''>
+              <img src='./../assets/images/for.png' alt=''>
             </div>
           </div>
         </div>

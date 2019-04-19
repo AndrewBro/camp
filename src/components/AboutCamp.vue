@@ -1,5 +1,5 @@
 <template>
-  <div class='about-camp' data-aos='fade-up' data-aos-easing='linear' data-aos-duration='500'>
+  <div class='about-camp' data-aos='fade-up'>
     <div class='divider'></div>
     <div class='about-camp-wrap'>
       <div class='about-camp-inner'>
