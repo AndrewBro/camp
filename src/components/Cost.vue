@@ -207,7 +207,7 @@
         .btn-registration {
           margin: 20px 0;
           .btn {
-            padding: 15px 10px;
+            padding: 15px 20px;
             background: #008dff;
             border: transparent;
             &:hover {

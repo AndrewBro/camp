@@ -39,6 +39,7 @@
   import base8 from './../assets/images/base8.jpg'
   import base9 from './../assets/images/base9.jpg'
   import base10 from './../assets/images/base10.jpg'
+  import base11 from './../assets/images/base11.jpg'
 
   export default {
     name: 'Accommodation',
@@ -48,16 +49,17 @@
     },
     data: () => ({
       slides: [
+        { image: base4},
         { image: base1},
+        { image: base5},
         { image: base2},
         { image: base3},
-        { image: base4},
-        { image: base5},
         { image: base6},
         { image: base7},
         { image: base8},
         { image: base9},
-        { image: base10}
+        { image: base10},
+        { image: base11}
       ]
     })
   }
