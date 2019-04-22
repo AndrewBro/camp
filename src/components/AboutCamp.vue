@@ -5,7 +5,7 @@
       <div class='about-camp-inner'>
         <img src='./../assets/images/stripes2.png' alt='' class='stripes2'>
         <h1 class='title'>О лагере</h1>
-        <h4 class='desc'>5 причин выбрать именно нас</h4>
+        <h4 class='desc'>Несколько причин выбрать именно нас</h4>
         <div class='items'>
           <div class='item'>
             <h5>Индивидуальный подход</h5>
@@ -67,6 +67,12 @@
             <li class='list-item'>
               <img src='./../assets/images/checkmark.png' alt=''>
               3 человека имеют свое дело</li>
+            <li class='list-item'>
+              <img src='./../assets/images/checkmark.png' alt=''>
+              средний возраст 27 лет</li>
+            <li class='list-item'>
+              <img src='./../assets/images/checkmark.png' alt=''>
+              больше половины сотрудников говорят по-английски</li>
           </ul>
         </div>
         <div class='register'>

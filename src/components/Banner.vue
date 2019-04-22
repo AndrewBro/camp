@@ -19,7 +19,7 @@
         <a href='https://www.instagram.com/jumanji_camp/'>
           <img src='./../assets/images/logo-insta-24-px.png' alt=''>Инстаграм
         </a>
-        <a href='https://t.me/JumajiCamp'>
+        <a href='https://t.me/JumanjiCamp'>
           <img src='./../assets/images/logo-telegram-24-px.png' alt=''>Телеграм
         </a>
       </div>
