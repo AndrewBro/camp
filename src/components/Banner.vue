@@ -13,8 +13,8 @@
         </a>
       </div>
     </div>
+    <div class='icon-scroll'></div>
     <div class='bot-nav'>
-      <img src='./../assets/images/icon-mouse.png' alt='' class='mouse' >
       <div class='bot-nav-wrap'>
         <a href='https://www.instagram.com/jumanji_camp/' target='_blank'>
           <img src='./../assets/images/logo-insta-24-px.png' alt=''>Инстаграм
@@ -79,9 +79,6 @@ export default {
         background-image: url('../../src/assets/images/texture.png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
-        transform: rotate(42deg);
-        opacity: 0.3;
         z-index: -1;
       }
     }
@@ -169,16 +166,6 @@ export default {
     @media (max-width: 768px) {
       bottom: 30px;
     }
-    .mouse {
-      position: absolute;
-      left: 50%;
-      transform: translate(50%);
-      max-height: 32px;
-      max-width: 32px;
-      @media (max-width: 768px) {
-        bottom: 0;
-      }
-    }
     a {
       color: inherit;
       font-size: 14px;
@@ -189,6 +176,45 @@ export default {
         text-decoration: none;
         opacity: .4;
       }
+    }
+  }
+  .icon-scroll,
+  .icon-scroll:before {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+  }
+  .icon-scroll {
+    width: 30px;
+    height: 53px;
+    margin-left: -20px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+    bottom: 50px;
+    transform: translate(50%);
+  }
+  .icon-scroll {
+    &:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      margin-left: -4px;
+      top: 8px;
+      border-radius: 4px;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(46px);
     }
   }
   .bot-nav-wrap {

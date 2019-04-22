@@ -137,13 +137,15 @@ export default {
         color: #268b67;
       }
       .creators {
-        max-width: 200px;
+        max-width: 175px;
         float: right;
         text-align: center;
         display: flex;
         flex-direction: column;
         position: relative;
         z-index: 2;
+        background: #fafafa;
+        padding: 10px;
         @media (max-width: 1000px) {
           float: none;
           margin: 0 auto;

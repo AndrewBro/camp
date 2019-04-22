@@ -1,6 +1,5 @@
 <template>
-  <transition-group name='slide-fade'>
-    <div class='parents' key='parents'>
+  <div class='parents' data-aos='fade-up'>
     <div>
       <h1 class='title'>Для родителей 👌</h1>
       <p class='text'>
@@ -14,10 +13,10 @@
         одной стороны, они еще дети, с другой - уже взрослые, и перед ними ставятся неподъемные вызовы, как им
         кажется. Многие подростки думают об образовании за границей...
       </p>
-      <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'>Читать полностью</a>
+      <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'
+         target='_blank'>Читать полностью</a>
     </div>
   </div>
-  </transition-group>
 </template>
 
 <script>
@@ -48,6 +47,9 @@
       left: 0;
       transform: rotate(42deg);
       z-index: -1;
+      @media (max-width: 1000px) {
+        opacity: .3;
+      }
     }
     a {
       margin: 0 5px 10px;

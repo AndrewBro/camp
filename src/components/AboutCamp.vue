@@ -69,10 +69,10 @@
               3 человека имеют свое дело</li>
             <li class='list-item'>
               <img src='./../assets/images/checkmark.png' alt=''>
-              средний возраст 27 лет</li>
+              Средний возраст 27 лет</li>
             <li class='list-item'>
               <img src='./../assets/images/checkmark.png' alt=''>
-              больше половины сотрудников говорят по-английски</li>
+              Больше половины сотрудников говорят по-английски</li>
           </ul>
         </div>
         <div class='register'>

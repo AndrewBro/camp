@@ -48,6 +48,7 @@
       &:hover {
         color: #fff;
         text-decoration: none;
+        border: 1px solid $blue2;
       }
     }
     a {

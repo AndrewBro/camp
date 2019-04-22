@@ -85,8 +85,7 @@
           <h3 class='cost__board-item-title text-center'>
             “Последний вагон”
           </h3>
-          <p class='sub-title_item text-center clear-padding'>Осталось совсем</p>
-          <p class='sub-title_item text-center'>мало путевок</p>
+          <p class='sub-title_item text-center'>Осталось совсем <br> мало путевок </p>
           <div class='amount text-center'>
             <span>₴3500</span>
           </div>
@@ -148,11 +147,9 @@
         border-radius: 5px;
         background: #fff;
         opacity: .4;
-        border: 1px solid #ccc;
+        border: 1px solid #f6f9fc;
         transition: .2s;
-        &:hover {
-          border: 1px solid $color-cost-amount;
-        }
+        height: fit-content;
         .current-plan {
           position: absolute;
           top: -20%;
@@ -160,7 +157,7 @@
           transform: translate(-50%);
         }
         &-title {
-          padding:30px 0 20px;
+          padding: 30px 0 20px;
           font-size: 24px;
           color: $color-cost-title;
           font-weight: bold;
@@ -205,7 +202,7 @@
           }
         }
         .btn-registration {
-          margin: 20px 0;
+          margin: 20px 0 30px;
           .btn {
             padding: 15px 20px;
             background: #008dff;
@@ -236,6 +233,9 @@
         .active {
           position: relative;
           animation: plan-animation 1s infinite;
+        }
+        &:hover {
+          border: 1px solid $color-cost-amount;
         }
       }
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class='footer' data-aos='fade-up'>
+  <div class='footer'>
     <div class='footer-wrap'>
       <div class='left'>
         <h3>Контакты</h3>
@@ -40,8 +40,8 @@ export default {
       content: '';
       top: 0;
       bottom: 0;
-      right: -50%;
-      left: 75%;
+      right: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background-image: url('./../../src/assets/images/texture7.png');

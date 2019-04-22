@@ -1,6 +1,6 @@
 <template>
-  <transition-group>
-    <div class='accom' data-aos='fade-up' key='base'>
+  <div data-aos='fade-up'>
+    <div class='accom' data-aos='fade-up'>
       <img src='./../assets/images/texture8.png' alt='' class='texture-8'>
       <img src='./../assets/images/texture9.png' alt='' class='texture-9'>
       <img src='./../assets/images/texture10.png' alt='' class='texture-10'>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </transition-group>
+  </div>
 </template>
 
 <script>
@@ -134,7 +134,6 @@
       }
     }
     .accom-content {
-      background: #f6f9fc;
       max-width: 1100px;
       margin: 0 auto;
       @media (max-width: 1400px) {
