@@ -154,9 +154,6 @@
       grid-gap: 15px;
       max-width: 1200px;
       margin: 0 auto;
-      .gallery__item {
-        cursor: pointer;
-      }
       figure {
         margin-bottom: 0;
       }

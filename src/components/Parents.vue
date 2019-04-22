@@ -14,7 +14,6 @@
         кажется. Многие подростки думают об образовании за границей...
       </p>
       <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'>Читать полностью</a>
-      <a class='file2 btn btn-outline-primary' href='./../../../camp/dist/file.pdf' target='_blank'>Больше о сотрудниках 💪</a>
     </div>
   </div>
 </template>

@@ -9,7 +9,7 @@
         <a href='tel:+380971141187' class='call'>+380971141187</a>
         <div class='social'>
           <a href='https://www.instagram.com/jumanji_camp/'>Инстаграм</a>
-          <a href='https://t.me/JumajiCamp'>Телеграм</a>
+          <a href='https://t.me/JumanjiCamp'>Телеграм</a>
         </div>
       </div>
       <div class='right'>

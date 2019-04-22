@@ -192,7 +192,7 @@
           color: #917ec0;
         }
       }
-      &:nth-child(3n + 3) {
+      &:nth-child(6n) {
         .img {
           background-image: url(../assets/images/games2.jpg);
         }
