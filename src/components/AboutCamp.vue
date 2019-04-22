@@ -78,7 +78,7 @@
         <div class='register'>
           <h4 class='desc'>Готовы зарегистрироваться?
             Мы ждем именно тебя.</h4>
-          <a href='http://forms.gle/4qpwmahFsMSQHYyR6' class='btn btn-primary'>Зарегистрироваться</a>
+          <a href='http://forms.gle/4qpwmahFsMSQHYyR6' class='btn btn-primary' target='_blank'>Зарегистрироваться</a>
         </div>
       </div>
     </div>

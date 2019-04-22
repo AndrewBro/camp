@@ -1,5 +1,6 @@
 <template>
-  <div class='parents' data-aos='fade-up'>
+  <transition-group name='slide-fade'>
+    <div class='parents' key='parents'>
     <div>
       <h1 class='title'>Для родителей 👌</h1>
       <p class='text'>
@@ -16,6 +17,7 @@
       <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'>Читать полностью</a>
     </div>
   </div>
+  </transition-group>
 </template>
 
 <script>

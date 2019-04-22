@@ -2,7 +2,7 @@
   <header class='header'>
     <div class='header-wrap'>
       <a href='tel:+380971141187' class='btn'>+38 (097) 114 11 87</a>
-      <a href='http://forms.gle/4qpwmahFsMSQHYyR6' class='btn btn-outline-primary'>Зарегистрироваться</a>
+      <a href='http://forms.gle/4qpwmahFsMSQHYyR6' target='_blank' class='btn btn-outline-primary'>Зарегистрироваться</a>
     </div>
   </header>
 </template>

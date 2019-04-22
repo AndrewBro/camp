@@ -8,13 +8,13 @@
         <a href='tel:+380639734390' class='call'>+380639734390</a>
         <a href='tel:+380971141187' class='call'>+380971141187</a>
         <div class='social'>
-          <a href='https://www.instagram.com/jumanji_camp/'>Инстаграм</a>
-          <a href='https://t.me/JumanjiCamp'>Телеграм</a>
+          <a href='https://www.instagram.com/jumanji_camp/' target='_blank'>Инстаграм</a>
+          <a href='https://t.me/JumanjiCamp' target='_blank'>Телеграм</a>
         </div>
       </div>
       <div class='right'>
         <div class='map'>
-          <a href='https://www.google.com.ua/maps/place/%D0%91%D0%B0%D0%B7%D0%B0+%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0+%22%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%22/@49.2738794,37.5635636,17.12z/data=!4m5!3m4!1s0x4120903c55555555:0x4741bf7c44329931!8m2!3d49.2738713!4d37.5633957?shorturl=1'>
+          <a href='https://www.google.com.ua/maps/place/%D0%91%D0%B0%D0%B7%D0%B0+%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0+%22%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%22/@49.2738794,37.5635636,17.12z/data=!4m5!3m4!1s0x4120903c55555555:0x4741bf7c44329931!8m2!3d49.2738713!4d37.5633957?shorturl=1'  target='_blank'>
             <img src='../assets/images/map.png' alt=''>
           </a>
         </div>

@@ -1,29 +1,31 @@
 <template>
-  <div class='accom' data-aos='fade-up'>
-    <img src='./../assets/images/texture8.png' alt='' class='texture-8'>
-    <img src='./../assets/images/texture9.png' alt='' class='texture-9'>
-    <img src='./../assets/images/texture10.png' alt='' class='texture-10'>
-    <div class='accom-wrap'>
-      <h1 class='title'>Проживание</h1>
-      <p class='text'>
-        Лагерь будет проходить на современной, недавно отреставрированной базе отдыха «Нептун», недалеко от Оскольского
-        водохранилища. Каждая группа будет жить в своем отдельном деревянном домике, расположенном в тени леса. Там есть
-        электричество, душ с горячей водой и туалеты. Питание будет трехразовым, а перед сном приятным бонусом будет снек.
-        На территории круглосуточно будет работать медсестра.
-      </p>
-      <div class='accom-content'>
-        <vueper-slides class='no-shadow'
-                       :visible-slides='3'
-                       :arrows='true'
-                       :bullets='false'
-                       :touchable="false"
-                       :slideImageInside='true'
-                       :breakpoints='{ 900: {visibleSlides: 1} }'>
-          <vueper-slide v-for='(slide, i) in slides' :key='i' :image='slide.image' />
-        </vueper-slides>
+  <transition-group>
+    <div class='accom' data-aos='fade-up' key='base'>
+      <img src='./../assets/images/texture8.png' alt='' class='texture-8'>
+      <img src='./../assets/images/texture9.png' alt='' class='texture-9'>
+      <img src='./../assets/images/texture10.png' alt='' class='texture-10'>
+      <div class='accom-wrap'>
+        <h1 class='title'>Проживание</h1>
+        <p class='text'>
+          Лагерь будет проходить на современной, недавно отреставрированной базе отдыха «Нептун», недалеко от Оскольского
+          водохранилища. Каждая группа будет жить в своем отдельном деревянном домике, расположенном в тени леса. Там есть
+          электричество, душ с горячей водой и туалеты. Питание будет трехразовым, а перед сном приятным бонусом будет снек.
+          На территории круглосуточно будет работать медсестра.
+        </p>
+        <div class='accom-content'>
+          <vueper-slides class='no-shadow'
+                         :visible-slides='3'
+                         :arrows='true'
+                         :bullets='false'
+                         :touchable="false"
+                         :slideImageInside='true'
+                         :breakpoints='{ 900: {visibleSlides: 1} }'>
+            <vueper-slide v-for='(slide, i) in slides' :key='i' :image='slide.image' />
+          </vueper-slides>
+        </div>
       </div>
     </div>
-  </div>
+  </transition-group>
 </template>
 
 <script>
@@ -47,21 +49,23 @@
       VueperSlides,
       VueperSlide
     },
-    data: () => ({
-      slides: [
-        { image: base4},
-        { image: base1},
-        { image: base5},
-        { image: base2},
-        { image: base3},
-        { image: base6},
-        { image: base7},
-        { image: base8},
-        { image: base9},
-        { image: base10},
-        { image: base11}
-      ]
-    })
+    data () {
+      return {
+        slides: [
+          {image: base4},
+          {image: base1},
+          {image: base5},
+          {image: base2},
+          {image: base3},
+          {image: base6},
+          {image: base7},
+          {image: base8},
+          {image: base9},
+          {image: base10},
+          {image: base11}
+        ]
+      }
+    }
   }
 </script>
 

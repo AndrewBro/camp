@@ -3,6 +3,15 @@
     <div class='about-wrap'>
       <div class='heading'>
         <p>Лето пролетит быстро и незаметно, но ты можешь успеть ухватить неделю ярких впечатлений в загадочном <span>Jumanji Camp </span></p>
+        <div class='creators'>
+          <h5>От создателей</h5>
+          <a href='https://www.facebook.com/youtoocenter/' target='_blank'>
+            <img src='./../assets/images/you-too.svg' alt=''>
+          </a>
+          <a href='https://www.instagram.com/prostirz/' target='_blank'>
+            <img src='./../assets/images/prostirz.svg' alt=''>
+          </a>
+        </div>
       </div>
       <div class='desc'>
         <div class='when desc-block'>
@@ -54,8 +63,8 @@ export default {
     max-width: 1170px;
     margin: 0 auto;
     padding: 80px 15px 15px;
+    position: relative;
     .heading {
-      max-width: 670px;
       margin: 0 auto 100px;
       padding: 0 15px;
       position: relative;
@@ -67,9 +76,9 @@ export default {
         background-size: contain;
         background-position: center;
         width: 100%;
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
           bottom: -10vh;
-          opacity: .2;
+          opacity: .1;
         }
       }
       &:before {
@@ -107,12 +116,48 @@ export default {
         letter-spacing: 0.5px;
         text-align: center;
         color: #21232a;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 550px;
+        width: 100%;
+        @media (max-width: 1000px) {
+          position: relative;
+          transform: none;
+          left: 0;
+          margin: 0 auto 50px;
+        }
         @media (max-width: 768px) {
           font-size: 1.1em;
+          max-width: 300px;
         }
       }
       span {
         color: #268b67;
+      }
+      .creators {
+        max-width: 200px;
+        float: right;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        @media (max-width: 1000px) {
+          float: none;
+          margin: 0 auto;
+        }
+        h5 {
+          font-family: 'Evolventa-Bold', sans-serif;
+          font-size: 1em;
+          letter-spacing: 0.5px;
+          color: #545764;
+          margin-bottom: 25px;
+        }
+        img {
+          margin-bottom: 25px;
+        }
       }
     }
     .desc {
