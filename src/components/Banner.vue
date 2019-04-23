@@ -72,14 +72,15 @@ export default {
       &:before {
         position: absolute;
         content: '';
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-image: url('../../src/assets/images/texture.png');
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
+        height: 300px;
+        width: 300px;
       }
     }
     &-title {
