@@ -14,7 +14,7 @@
       </div>
       <div class='right'>
         <div class='map'>
-          <a href='https://www.google.com.ua/maps/place/%D0%91%D0%B0%D0%B7%D0%B0+%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0+%22%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%22/@49.2738794,37.5635636,17.12z/data=!4m5!3m4!1s0x4120903c55555555:0x4741bf7c44329931!8m2!3d49.2738713!4d37.5633957?shorturl=1'  target='_blank'>
+          <a href='https://www.google.com.ua/maps/dir/49.9900031,36.3159663/%D0%91%D0%B0%D0%B7%D0%B0+%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0+%22%D0%9D%D0%B5%D0%BF%D1%82%D1%83%D0%BD%22,+%D0%9F%D0%B5%D1%81%D0%BA%D0%B8-%D0%A0%D0%B0%D0%B4%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+63832/@49.5718232,36.5399337,9z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4120903c55555555:0x4741bf7c44329931!2m2!1d37.5633957!2d49.2738713!3e0'  target='_blank'>
             <img src='../assets/images/map.png' alt=''>
           </a>
         </div>
