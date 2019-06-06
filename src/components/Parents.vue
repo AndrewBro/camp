@@ -13,7 +13,7 @@
         одной стороны, они еще дети, с другой - уже взрослые, и перед ними ставятся неподъемные вызовы, как им
         кажется. Многие подростки думают об образовании за границей...
       </p>
-      <a class='file btn btn-primary' href='https://drive.google.com/file/d/1jlQa-cMCUdK58raLNA35R4CAkyrRznoY/view'
+      <a class='file btn btn-primary' href='https://docs.google.com/document/d/1QXxqAidbb6T93_utAS24Hwg-tYFyWXc0BEzE6mF2ufY/edit?usp=sharing'
          target='_blank'>Читать полностью</a>
     </div>
   </div>
