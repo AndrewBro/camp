@@ -29,10 +29,7 @@
             </ul>
           </div>
         </div>
-        <div class='cost__board-item active-plan'>
-          <div class='current-plan'>
-            <img src='../assets/images/current-plan.png' alt='' class='active'>
-          </div>
+        <div class='cost__board-item'>
           <h3 class='cost__board-item-title text-center'>
             “Поздние пташки”
           </h3>
@@ -53,14 +50,11 @@
               </li>
             </ul>
           </div>
-          <div class='btn-registration text-center'>
-            <button class='btn btn-primary'>
-              <a href='http://forms.gle/4qpwmahFsMSQHYyR6' target='_blank'>Зарегистрироваться</a>
-            </button>
-            <p class='bonus-text'>Приведи друга и получи 10% скидку 🔥</p>
-          </div>
         </div>
-        <div class='cost__board-item'>
+        <div class='cost__board-item active-plan'>
+          <div class='current-plan'>
+            <img src='../assets/images/current-plan.png' alt='' class='active'>
+          </div>
           <h3 class='cost__board-item-title text-center'>
             “Обычный пакет”
           </h3>
@@ -79,6 +73,12 @@
                 <i class='icon-check-mark'><img src='../assets/images/icon-checkmark-16-px_2.png' alt=''></i>
               </li>
             </ul>
+          </div>
+          <div class='btn-registration text-center'>
+            <button class='btn btn-primary'>
+              <a href='http://forms.gle/4qpwmahFsMSQHYyR6' target='_blank'>Зарегистрироваться</a>
+            </button>
+            <p class='bonus-text'>Приведи друга и получи 10% скидку 🔥</p>
           </div>
         </div>
         <div class='cost__board-item'>

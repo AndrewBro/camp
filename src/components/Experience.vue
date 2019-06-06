@@ -8,18 +8,18 @@
         <h3>Тебя ждут</h3>
         <div class='experiences'>
           <div class='row items-holder'>
-            <div class='column'>
-              <div class='item' v-tilt>
-                <div class='img'></div>
-                <div class='description'>
-                  Любите ощущение адреналина, а
-                  экстрим - это неотъемлемая часть вашей жизни ?
-                  Максимальную безопасность гарантируют наши инструктора.
-                  Яркие воспоминания о таком экстремальном развлечении останутся у вас надолго
-                </div>
-                <div class='label'>Зип-лайн</div>
-              </div>
-            </div>
+<!--            <div class='column'>-->
+<!--              <div class='item' v-tilt>-->
+<!--                <div class='img'></div>-->
+<!--                <div class='description'>-->
+<!--                  Любите ощущение адреналина, а-->
+<!--                  экстрим - это неотъемлемая часть вашей жизни ?-->
+<!--                  Максимальную безопасность гарантируют наши инструктора.-->
+<!--                  Яркие воспоминания о таком экстремальном развлечении останутся у вас надолго-->
+<!--                </div>-->
+<!--                <div class='label'>Зип-лайн</div>-->
+<!--              </div>-->
+<!--            </div>-->
             <div class='column'>
               <div class='item' v-tilt>
                 <div class='img'></div>
@@ -166,39 +166,35 @@
           background-image: url(../assets/images/zip-line.jpg);
         }
       }
-      &:nth-child(2) {
+      &:nth-child(1) {
         .img {
           background-image: url(../assets/images/quest.jpg);
         }
       }
-      &:nth-child(3) {
+      &:nth-child(2) {
         .img {
           background-image: url(../assets/images/trainings.jpg);
         }
       }
-      &:nth-child(4) {
+      &:nth-child(3) {
         .img {
           background-image: url(../assets/images/games.jpg);
         }
       }
-      &:nth-child(5) {
+      &:nth-child(4) {
         .img {
           background-image: url(../assets/images/speaking.jpg);
         }
       }
-      &:nth-child(3n + 2) {
+      &:nth-child(5) {
         .label {
           background-color: $color-lavander;
           color: #917ec0;
-        }
-      }
-      &:nth-child(6n) {
-        .img {
-          background-image: url(../assets/images/games2.jpg);
-        }
-        .label {
           background-color: $color-pale;
           color: #9b8162;
+        }
+        .img {
+          background-image: url(../assets/images/games2.jpg);
         }
       }
       @media (min-width: 601px) {
